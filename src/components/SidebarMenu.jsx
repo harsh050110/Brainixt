@@ -133,7 +133,7 @@ const SidebarMenu = ({ open, setOpen }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 bg-white z-50">
+    <div className="fixed inset-0 bg-[#2b5d76] z-50">
 
       {/* 🔝 TOP BAR */}
       <div className="flex items-center gap-4 px-6 py-4 border-b">
@@ -151,7 +151,7 @@ const SidebarMenu = ({ open, setOpen }) => {
           className="ml-6 flex-1 px-5 py-2 border rounded-full outline-none"
         />
 
-        <button className="ml-4 font-medium">LOG IN</button>
+        <button className="ml-4 font-medium text-white">LOG IN</button>
       </div>
 
       {/* 🔥 MAIN */}
@@ -162,14 +162,14 @@ const SidebarMenu = ({ open, setOpen }) => {
 
           {/* SERVICES */}
           <div>
-            <p className="text-gray-500 text-sm mb-2">Our Services</p>
+            <p className="text-gray-300 text-sm mb-2">Our Services</p>
 
             <p
               onClick={() => {
                 setActiveSection("industries");
                 setActiveItem(sectionsData.industries[0]);
               }}
-              className="cursor-pointer hover:underline"
+              className="cursor-pointer hover:underline text-white"
             >
               Industries
             </p>
@@ -179,7 +179,7 @@ const SidebarMenu = ({ open, setOpen }) => {
                 setActiveSection("capabilities");
                 setActiveItem(sectionsData.capabilities[0]);
               }}
-              className="mt-2 cursor-pointer hover:underline"
+              className="mt-2 cursor-pointer hover:underline text-white"
             >
               Capabilities
             </p>
@@ -189,7 +189,7 @@ const SidebarMenu = ({ open, setOpen }) => {
                 setActiveSection("bcgx");
                 setActiveItem(sectionsData.bcgx[0]);
               }}
-              className="mt-2 cursor-pointer hover:underline"
+              className="mt-2 cursor-pointer hover:underline text-white"
             >
               Brainixt X
             </p>
@@ -203,7 +203,7 @@ const SidebarMenu = ({ open, setOpen }) => {
                 setActiveSection("simple");
                 setActiveItem(item);
               }}
-              className="pt-4 border-t cursor-pointer hover:bg-gray-100 px-2 py-2 rounded-lg flex justify-between items-center"
+              className="pt-4 border-t cursor-pointer bg-white hover:bg-green-400 px-2 py-2 rounded-lg flex justify-between items-center"
             >
               {item.name}
               <span>→</span>
@@ -216,7 +216,7 @@ const SidebarMenu = ({ open, setOpen }) => {
               setActiveSection("company");
               setActiveItem(sectionsData.company[0]);
             }}
-            className="pt-4 border-t cursor-pointer hover:bg-gray-100 px-2 py-2 rounded-lg flex justify-between items-center"
+            className="pt-4 border-t cursor-pointer bg-white hover:bg-green-400 px-2 py-2 rounded-lg flex justify-between items-center"
           >
             Our Company
             <span>→</span>
@@ -267,11 +267,11 @@ const SidebarMenu = ({ open, setOpen }) => {
                   className="w-full h-[220px] object-cover rounded-xl"
                 />
 
-                <h2 className="text-2xl font-semibold mt-5">
+                <h2 className="text-2xl font-semibold mt-5 text-white">
                   {activeItem.name}
                 </h2>
 
-                <p className="text-gray-600 mt-3 max-w-md">
+                <p className="text-gray-300 mt-3 max-w-md">
                   {activeItem.description}
                 </p>
 
