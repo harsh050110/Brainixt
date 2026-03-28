@@ -1,9 +1,11 @@
 import { useState } from "react";
 import SidebarMenu from "./SidebarMenu";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -25,12 +27,12 @@ const Navbar = () => {
             </div>
           </button>
 
-          {/* Logo */}
           <img
-            src={logo}
-            alt="Brainixt Logo"
-            className="h-8 object-contain"
-          />
+  src={logo}
+  alt="Brainixt Logo"
+  className="h-8 object-contain cursor-pointer"
+  onClick={() => navigate("/")}
+/>
 
         </div>
 

@@ -1,75 +1,57 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // ✅ added
 import logo from "../assets/logo.png";
 
 /* ================= DATA ================= */
 
 const sectionsData = {
   industries: [
-  {
-    name: "Financial Service & FinTech",
-    description: "Digital infrastructure, compliance alignment, performance systems, scalable platforms.",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-  },
-  {
-    name: "Real Estate & PropTech",
-    description: "Lead systems, CRM integration, investor reporting, digital sales architecture.",
-    image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
-  },
-  {
-    name: "Healthcare & HealthTech",
-    description: "Patient management systems, digital transformation, automation.",
-    image: "https://images.unsplash.com/photo-1580281657527-47c1d72b3c54",
-  },
-  {
-    name: "Education & EdTech",
-    description: "Scalable LMS platforms and growth systems.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-  },
-  {
-    name: "E-commerce & Retail",
-    description: "Conversion systems and omnichannel strategy.",
-    image: "https://images.unsplash.com/photo-1515169067865-5387ec356754",
-  },
-  {
-    name: "SaaS & Technology Startups",
-    description: "Growth loops and technical architecture optimization.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-  },
-  {
-    name: "Manufacturing & Industrial",
-    description: "Process automation and operational efficiency.",
-    image: "https://images.unsplash.com/photo-1581090700227-1e8c7f3b7f4f",
-  },
-],
+    {
+      name: "Financial Service & FinTech",
+      description: "Digital infrastructure, compliance alignment, performance systems, scalable platforms.",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+    },
+    {
+      name: "Real Estate & PropTech",
+      description: "Lead systems, CRM integration, investor reporting, digital sales architecture.",
+      image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+    },
+    {
+      name: "Healthcare & HealthTech",
+      description: "Patient management systems, digital transformation, automation.",
+      image: "https://images.unsplash.com/photo-1580281657527-47c1d72b3c54",
+    },
+    {
+      name: "Education & EdTech",
+      description: "Scalable LMS platforms and growth systems.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+    },
+    {
+      name: "E-commerce & Retail",
+      description: "Conversion systems and omnichannel strategy.",
+      image: "https://images.unsplash.com/photo-1515169067865-5387ec356754",
+    },
+    {
+      name: "SaaS & Technology Startups",
+      description: "Growth loops and technical architecture optimization.",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    },
+    {
+      name: "Manufacturing & Industrial",
+      description: "Process automation and operational efficiency.",
+      image: "https://images.unsplash.com/photo-1581090700227-1e8c7f3b7f4f",
+    },
+  ],
 
-capabilities: [
-  {
-    name: "Business & Digital Strategy",
-    description: "Growth begins with clarity in strategy. Many organizations invest heavily in technology and marketing without aligning those investments with long-term business objectives.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-  },
-  {
-    name: "Technology Architecture & Infrastructure",
-    description: "Technology should enable growth, not create complexity.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-  },
-  {
-    name: "Growth & Market Expansion",
-    description: "Marketing alone does not create sustainable growth. Organizations need structured acquisition, conversion, and retention systems that generate predictable results.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-  },
-  {
-    name: "Operational & Structural Advisory",
-    description: "Brainixt supports leadership teams in strengthening operational foundations and building systems that support long-term expansion.",
-    image: "https://images.unsplash.com/photo-1581090700227-1e8c7f3b7f4f",
-  },
-  {
-    name: "The Brainixt Transformation Model™",
-    description: "Every engagement at Brainixt follows a disciplined transformation framework designed to deliver measurable outcomes.",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984",
-  }
-],
-  brainixtx: [
+  capabilities: [
+    {
+      name: "Business & Digital Strategy",
+      description: "Growth begins with clarity in strategy.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    },
+  ],
+
+  brainixtx: [ // ✅ fixed name
     {
       name: "AI Products",
       description: "Building scalable AI products.",
@@ -105,8 +87,9 @@ capabilities: [
       name: "Our Insights",
       description: "Latest insights and research from BCG.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+      slug: "/insights",
     },
-    {
+        {
       name: "Brainixt in India",
       description: "Explore BCG’s work in India.",
       image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
@@ -129,22 +112,18 @@ capabilities: [
 const SidebarMenu = ({ open, setOpen }) => {
   const [activeSection, setActiveSection] = useState(null);
   const [activeItem, setActiveItem] = useState(null);
+  const navigate = useNavigate(); // ✅ added
 
   if (!open) return null;
 
   return (
     <div className="fixed inset-0 bg-[#2b5d76] z-50">
 
-      {/* 🔝 TOP BAR */}
+      {/* TOP BAR */}
       <div className="flex items-center gap-4 px-6 py-4 border-b">
         <button onClick={() => setOpen(false)}>✕</button>
 
-                  {/* Logo */}
-                  <img
-          src={logo}
-          alt="Brainixt Logo"
-          className="h-10 object-contain"
-        />
+        <img src={logo} alt="Brainixt Logo" className="h-10 object-contain" />
 
         <input
           placeholder="Type to search"
@@ -154,13 +133,12 @@ const SidebarMenu = ({ open, setOpen }) => {
         <button className="ml-4 font-medium text-white">LOG IN</button>
       </div>
 
-      {/* 🔥 MAIN */}
+      {/* MAIN */}
       <div className="flex h-[calc(100%-70px)]">
 
-        {/* 🧭 LEFT MENU */}
+        {/* LEFT MENU */}
         <div className="w-[260px] border-r px-6 py-6 space-y-5">
 
-          {/* SERVICES */}
           <div>
             <p className="text-gray-300 text-sm mb-2">Our Services</p>
 
@@ -186,8 +164,8 @@ const SidebarMenu = ({ open, setOpen }) => {
 
             <p
               onClick={() => {
-                setActiveSection("bcgx");
-                setActiveItem(sectionsData.bcgx[0]);
+                setActiveSection("brainixtx");
+                setActiveItem(sectionsData.brainixtx[0]);
               }}
               className="mt-2 cursor-pointer hover:underline text-white"
             >
@@ -195,14 +173,19 @@ const SidebarMenu = ({ open, setOpen }) => {
             </p>
           </div>
 
-          {/* SIMPLE PAGES */}
           {sectionsData.simplePages.map((item, i) => (
             <div
               key={i}
               onClick={() => {
-                setActiveSection("simple");
-                setActiveItem(item);
-              }}
+  if (item.slug) {
+    navigate(item.slug);
+    setOpen(false);
+    return;
+  }
+
+  setActiveSection("simple");
+  setActiveItem(item);
+}}
               className="pt-4 border-t cursor-pointer bg-white hover:bg-green-400 px-2 py-2 rounded-lg flex justify-between items-center"
             >
               {item.name}
@@ -210,7 +193,6 @@ const SidebarMenu = ({ open, setOpen }) => {
             </div>
           ))}
 
-          {/* OUR COMPANY */}
           <div
             onClick={() => {
               setActiveSection("company");
@@ -224,10 +206,9 @@ const SidebarMenu = ({ open, setOpen }) => {
 
         </div>
 
-        {/* 📂 PANEL */}
+        {/* PANEL */}
         {activeSection && (
           <>
-            {/* LIST (for complex + company) */}
             {activeSection !== "simple" && (
               <div className="w-[420px] px-6 py-6 space-y-2">
 
@@ -257,7 +238,6 @@ const SidebarMenu = ({ open, setOpen }) => {
               </div>
             )}
 
-            {/* PREVIEW PANEL */}
             {activeItem && activeItem.image && (
               <div className="flex-1 px-8 py-6 border-l">
 
@@ -275,9 +255,18 @@ const SidebarMenu = ({ open, setOpen }) => {
                   {activeItem.description}
                 </p>
 
-                <button className="mt-5 px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                <button
+                  onClick={() => {
+                    if (activeItem?.slug) {
+                      navigate(activeItem.slug);
+                      setOpen(false);
+                    }
+                  }}
+                  className="mt-5 px-6 py-2 bg-green-500 text-white rounded-full"
+                >
                   → VISIT PAGE
                 </button>
+
               </div>
             )}
           </>
