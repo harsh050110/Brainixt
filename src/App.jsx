@@ -19,6 +19,7 @@ import EcommercePage from "./pages/Industries/E-commercePage";
 import SaasPage from "./pages/Industries/SaasPage";
 import ProfessionalServicesPage from "./pages/Industries/ProfessionalPage";
 import AboutPage from "./pages/AboutUs";
+import ContactPage from "./pages/ContactUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactPage />} />
 
         {/* Capabilities */}
         <Route path="/insights" element={<Insights />} />

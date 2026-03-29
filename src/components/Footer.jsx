@@ -55,7 +55,7 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-medium mb-3">Industries</h4>
          <ul className="space-y-2 text-sm">
-  <li><Link to="/realestate" className="hover:text-white">Real Estate & PropTech</Link></li>
+  <li><Link to="/real-estate" className="hover:text-white">Real Estate & PropTech</Link></li>
   <li><Link to="/saas" className="hover:text-white">SaaS & Startups</Link></li>
   <li><Link to="/ecommerce" className="hover:text-white">E-commerce & D2C</Link></li>
   <li><Link to="/professional-services" className="hover:text-white">Professional Services</Link></li>
