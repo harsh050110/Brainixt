@@ -10,31 +10,37 @@ const sectionsData = {
       name: "Financial Service & FinTech",
       description: "Digital infrastructure, compliance alignment, performance systems, scalable platforms.",
       image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+      slug:"/financial",
     },
     {
       name: "Real Estate & PropTech",
       description: "Lead systems, CRM integration, investor reporting, digital sales architecture.",
       image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+      slug:"/real-estate",
     },
     {
       name: "Healthcare & HealthTech",
       description: "Patient management systems, digital transformation, automation.",
       image: "https://images.unsplash.com/photo-1580281657527-47c1d72b3c54",
+      slug:"/healthcare",
     },
     {
       name: "Education & EdTech",
       description: "Scalable LMS platforms and growth systems.",
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+      slug:"/education",
     },
     {
       name: "E-commerce & Retail",
       description: "Conversion systems and omnichannel strategy.",
       image: "https://images.unsplash.com/photo-1515169067865-5387ec356754",
+      slug:"/ecommerce",
     },
     {
       name: "SaaS & Technology Startups",
       description: "Growth loops and technical architecture optimization.",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      slug:"/saas",
     },
     {
       name: "Manufacturing & Industrial",
@@ -42,21 +48,46 @@ const sectionsData = {
       image: "https://images.unsplash.com/photo-1581090700227-1e8c7f3b7f4f",
     },
   ],
+capabilities: [
+  {
+    name: "Business & Digital Strategy",
+    description: "Growth begins with clarity in strategy.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    slug:"/business",
+  },
+  {
+    name: "Technology Architecture & Infrastructure",
+    description: "Brainixt designs and deploy digital infrastructure that supports operational efficiency, seamless customer experience and long-term scalability.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    slug:"/technology",
+  },
+  {
+    name: "Growth & Market Expansion",
+    description: "Brainixt engineers performance-driven growth ecosystems that combine strategic positioning, digital marketing infrastructure, and data-driven optimization.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    slug:"/growth",
+  },
+  {
+    name: "Operational & Structural Advisory",
+    description: "Brainixt supports leadership teams in strengthening operational foundations and building systems that support long-term expansion.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+    slug:"/operations",
+  }
+],
 
-  capabilities: [
+  brainixtx: [ 
     {
-      name: "Business & Digital Strategy",
-      description: "Growth begins with clarity in strategy.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    },
-  ],
-
-  brainixtx: [ // ✅ fixed name
-    {
-      name: "AI Products",
-      description: "Building scalable AI products.",
-      image: "https://images.unsplash.com/photo-1677442135136-760c813028c0",
-    },
+    name: "The Brainixt Transformation Model™",
+    description: "Every engagement at Brainixt follows a disciplined transformation framework designed to deliver measurable outcomes.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    slug:"/transformation",
+  },
+  {
+    name: "Working with Brainixt",
+    description: "Brainixt is not a vendor delivering isolated services.",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    slug:"/working",
+  }
   ],
 
   company: [
@@ -177,12 +208,6 @@ const SidebarMenu = ({ open, setOpen }) => {
             <div
               key={i}
               onClick={() => {
-  if (item.slug) {
-    navigate(item.slug);
-    setOpen(false);
-    return;
-  }
-
   setActiveSection("simple");
   setActiveItem(item);
 }}
