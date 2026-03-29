@@ -2,7 +2,7 @@ import { capabilities } from "../../data/content";
 
 const Capabilities = () => {
   return (
-    <section className="bg-[#0b2a3a] text-white px-10 py-24">
+    <section className="bg-[#020617] text-white px-10 py-24">
       
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         

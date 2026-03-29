@@ -18,7 +18,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="bg-[#0b2a3a] text-white px-10 py-20">
+    <section className="bg-[#020617] text-white px-10 py-20">
       <h2 className="text-3xl font-semibold mb-12">
         Structured Intervention. Quantifiable Outcomes.
       </h2>

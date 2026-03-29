@@ -18,12 +18,7 @@ const sectionsData = {
       image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
       slug:"/real-estate",
     },
-    {
-      name: "Healthcare & HealthTech",
-      description: "Patient management systems, digital transformation, automation.",
-      image: "https://images.unsplash.com/photo-1580281657527-47c1d72b3c54",
-      slug:"/healthcare",
-    },
+  
     {
       name: "Education & EdTech",
       description: "Scalable LMS platforms and growth systems.",
@@ -43,9 +38,10 @@ const sectionsData = {
       slug:"/saas",
     },
     {
-      name: "Manufacturing & Industrial",
-      description: "Process automation and operational efficiency.",
+      name: "Professional Services",
+      description: "Brainixt supports these firms in modernizing their digital infrastructure while strengthening brand authority and client acquisition systems.",
       image: "https://images.unsplash.com/photo-1581090700227-1e8c7f3b7f4f",
+      slug:"/professional-services",
     },
   ],
 capabilities: [
@@ -95,6 +91,7 @@ capabilities: [
       name: "About Brainixt",
       description: "Learn about Brainixt's history and mission.",
       image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+      slug:"/about",
     },
     {
       name: "Client Impact",
@@ -148,7 +145,7 @@ const SidebarMenu = ({ open, setOpen }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#2b5d76] z-50">
+    <div className="fixed inset-0 bg-[#020617] z-50 text-gray-500">
 
       {/* TOP BAR */}
       <div className="flex items-center gap-4 px-6 py-4 border-b">

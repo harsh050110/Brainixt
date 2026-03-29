@@ -1,6 +1,6 @@
 const Founder = () => {
   return (
-    <section className="bg-[#0b2a3a] px-10 py-24 text-black">
+    <section className="bg-[#020617] px-10 py-24 text-black">
 
       {/* Container */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">

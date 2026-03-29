@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="bg-[#0b2a3a] text-white px-10 pt-[90px] pb-12 min-h-screen">
+    <div className="bg-[#020617] text-white px-10 pt-[90px] pb-12 min-h-screen">
 
       {/* TOP GRID */}
       <div className="grid grid-cols-3 gap-6">
@@ -142,7 +142,7 @@ const Hero = () => {
         </div>
 
         {/* CTA BOX */}
-        <div className="bg-[#1c3b4d] p-6 rounded-xl flex flex-col justify-center">
+        <div className="bg-[#095976] p-6 rounded-xl flex flex-col justify-center">
 
           <h2 className="text-lg font-semibold mb-4">
             Stay ahead with Brainixt insights and strategies.

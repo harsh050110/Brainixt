@@ -7,7 +7,7 @@ const BrainixtInsights = () => {
   ];
 
   return (
-    <section className="bg-[#0b2a3a] text-white px-6 md:px-20 py-28">
+    <section className="bg-[#020617] text-white px-6 md:px-20 py-28">
 
       {/* HEADER */}
       <div className="max-w-4xl mb-20">

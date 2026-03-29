@@ -16,6 +16,8 @@ import RealEstate from "./pages/Industries/RealEstate";
 import Education from "./pages/Industries/Education";
 import EcommercePage from "./pages/Industries/E-commercePage";
 import SaasPage from "./pages/Industries/SaasPage";
+import ProfessionalServicesPage from "./pages/Industries/ProfessionalPage";
+import AboutPage from "./pages/AboutUs";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/ecommerce" element={<EcommercePage />} />
         <Route path="/saas" element={<SaasPage />} />
+        <Route path="/professional-services" element={<ProfessionalServicesPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </div>
   );

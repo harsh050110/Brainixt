@@ -2,7 +2,7 @@ import { transformationSteps } from "../../data/content";
 
 const Transformation = () => {
   return (
-    <section className="bg-[#0b2a3a] px-10 py-24">
+    <section className="bg-[#020617] px-10 py-24">
       
       {/* HEADER */}
       <div className="max-w-4xl mb-16">
@@ -29,7 +29,7 @@ const Transformation = () => {
             >
               
               {/* CIRCLE */}
-              <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full border-2 border-black bg-white font-semibold z-10 relative transition-all duration-300 group-hover:bg-black group-hover:text-white">
+              <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full border-2 border-white bg-white font-semibold z-10 relative transition-all duration-300 group-hover:bg-red-400 group-hover:text-white">
                 {i + 1}
               </div>
 

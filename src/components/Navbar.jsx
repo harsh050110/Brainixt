@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-10 py-5
-      bg-[#0b2a3a]/80 backdrop-blur-md border-b border-white/10 text-white">
+      bg-[#020617]/80 backdrop-blur-md border-b border-white/10 text-white">
 
         {/* LEFT */}
         <div className="flex items-center gap-6">

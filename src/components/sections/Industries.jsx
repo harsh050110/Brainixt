@@ -2,7 +2,7 @@ import { industries } from "../../data/content";
 
 const Industries = () => {
   return (
-    <section className="bg-[#0b2a3a] text-black px-10 py-24">
+    <section className="bg-[#020617] text-black px-10 py-24">
       
       {/* HEADER */}
       <div className="max-w-5xl">
