@@ -46,7 +46,7 @@ const Navbar = () => {
 
           {/* Login */}
           <button className="px-5 py-2 border border-white/20 rounded-full text-sm text-white hover:border-green-400 transition">
-            Log in
+            Contact Us
           </button>
 
         </div>

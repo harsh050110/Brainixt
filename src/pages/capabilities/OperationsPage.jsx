@@ -127,12 +127,7 @@ export default function OperationsPage() {
         </p>
       </div>
 
-      {/* CTA */}
-      <div className="text-center mt-10">
-        <button className="px-6 py-3 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 text-black font-medium hover:scale-105 transition">
-          Optimize Operations
-        </button>
-      </div>
+
 
     </div>
   );
