@@ -21,7 +21,7 @@ const Industries = () => {
           
           <div
             key={i}
-            className="group relative bg-white p-8 border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group relative bg-black/10 p-8 border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 text-white"
           >
             
             {/* TOP LINE ACCENT */}
@@ -35,7 +35,7 @@ const Industries = () => {
               </span>
             </h3>
 
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-400 text-sm leading-relaxed">
               Strategic growth, digital transformation, and performance optimization tailored for this sector.
             </p>
 

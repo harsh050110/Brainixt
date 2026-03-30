@@ -94,19 +94,22 @@ capabilities: [
       slug:"/about",
     },
     {
-      name: "Client Impact",
+      name: "Case Studies",
       description: "See how Brainixt drives impact.",
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+      slug:"/case-studies",
     },
     {
       name: "People",
       description: "Meet the people behind Brainixt.",
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      slug:"/people",
     },
     {
       name: "Offices",
       description: "Explore Brainixt offices worldwide.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
+      slug:"/offices",
     },
   ],
 

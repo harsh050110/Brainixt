@@ -20,6 +20,8 @@ import SaasPage from "./pages/Industries/SaasPage";
 import ProfessionalServicesPage from "./pages/Industries/ProfessionalPage";
 import AboutPage from "./pages/AboutUs";
 import ContactPage from "./pages/ContactUs";
+import PeoplePage from "./pages/Company/people";
+import OfficePage from "./pages/Company/Office";
 
 function App() {
   return (
@@ -49,6 +51,9 @@ function App() {
         <Route path="/saas" element={<SaasPage />} />
         <Route path="/professional-services" element={<ProfessionalServicesPage />} />
         <Route path="/about" element={<AboutPage />} />
+        {/* Companies */}
+        <Route path="/people" element={<PeoplePage />} />
+        <Route path="/offices" element={<OfficePage />} />
       </Routes>
       <Footer/>
     </div>
