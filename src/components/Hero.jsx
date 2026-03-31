@@ -1,3 +1,5 @@
+import { Link} from "react-router-dom";
+import Blog from "../assets/Blog.jpg";
 const Hero = () => {
   return (
     <div className="bg-[#020617] text-white px-10 pt-[90px] pb-12 min-h-screen">
@@ -28,14 +30,16 @@ const Hero = () => {
 
             {/* 🔥 CTA BUTTONS */}
             <div className="flex gap-4 mt-8">
-
-              <button className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gray-200 transition">
+              <Link to="/contact" className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gray-400 transition">
                 Discuss Your Growth Strategy →
-              </button>
+              </Link>
 
-              <button className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition">
-                Explore Our Capabilities
-              </button>
+<Link
+  to="/capabilities"
+  className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition inline-block"
+>
+  Explore Our Capabilities
+</Link>
 
             </div>
           </div>
@@ -74,9 +78,11 @@ const Hero = () => {
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">CASE STUDY</p>
-              <h2 className="text-lg font-semibold">
-                Driving enterprise growth through strategy →
-              </h2>
+              <Link to="/technology">
+  <h2 className="text-lg font-semibold hover:text-indigo-400 transition cursor-pointer">
+    Driving enterprise growth through strategy and technology→
+  </h2>
+</Link>
             </div>
           </div>
 
@@ -100,9 +106,11 @@ const Hero = () => {
               </h2>
             </div>
 
-            <button className="bg-white text-black px-5 py-2 rounded-md w-fit">
-              View Case Study →
-            </button>
+<Link to="/about">
+  <button className="bg-white text-black px-5 py-2 rounded-md w-fit">
+    View Case Study →
+  </button>
+</Link>
 
           </div>
 
@@ -122,7 +130,7 @@ const Hero = () => {
           <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <p className="text-xs text-gray-300">INSIGHT</p>
             <h2 className="text-lg font-semibold">
-              Scaling leadership in modern enterprises →
+              Scaling leadership in modern enterprises 
             </h2>
           </div>
         </div>
@@ -130,14 +138,16 @@ const Hero = () => {
         {/* CARD 4 */}
         <div className="relative h-[220px] rounded-xl overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1549921296-3a6b2d9c43d2"
-            className="w-full h-full object-cover"
+            src={Blog}
+            className="w-full h-full object-contain"
           />
           <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <p className="text-xs text-gray-300">BLOG</p>
-            <h2 className="text-lg font-semibold">
-              High-performance growth systems →
-            </h2>
+            <Link to="/company-studies">
+              <h2 className="text-lg font-semibold">
+                High-performance growth systems →
+              </h2>
+            </Link>
           </div>
         </div>
 

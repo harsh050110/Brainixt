@@ -22,9 +22,11 @@ import AboutPage from "./pages/AboutUs";
 import ContactPage from "./pages/ContactUs";
 import PeoplePage from "./pages/Company/people";
 import OfficePage from "./pages/Company/Office";
+import CompanyStudies from "./pages/Company/companystudies";
+import ParthJain from "./pages/Brainixt/ParthJain";
 
 function App() {
-  return (
+  return ( 
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
 
@@ -54,6 +56,8 @@ function App() {
         {/* Companies */}
         <Route path="/people" element={<PeoplePage />} />
         <Route path="/offices" element={<OfficePage />} />
+        <Route path="/company-studies" element={<CompanyStudies />} />
+        <Route path="/parth-jain" element={<ParthJain />}/>
       </Routes>
       <Footer/>
     </div>

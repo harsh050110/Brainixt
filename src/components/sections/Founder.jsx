@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import Parth from "../../assets/Parth2.png";
 const Founder = () => {
   return (
     <section className="bg-[#020617] px-10 py-24 text-black">
@@ -27,19 +29,22 @@ const Founder = () => {
           </p>
 
           {/* CTA */}
-          <button className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition">
-            View Profile →
-          </button>
+          <Link
+  to="/parth-jain"   
+  className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition inline-block"
+>
+  View Profile →
+</Link>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full h-[350px] rounded-xl overflow-hidden">
-          <img
-            src="img"
-            alt="Founder"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="w-[350px] h-[350px] rounded-full overflow-hidden">
+  <img
+    src={Parth}
+    alt="Founder"
+    className="w-full h-full object-cover"
+  />
+</div>
 
       </div>
 

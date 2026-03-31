@@ -62,9 +62,11 @@ export default function ProfessionalServicesPage() {
 
       {/* CTA */}
       <div className="text-center mt-8">
+        <LINK to ="/parth-jain">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-400 to-purple-500 text-black font-medium hover:scale-105 transition">
           Transform Your Firm
         </button>
+        </LINK>
       </div>
 
     </div>

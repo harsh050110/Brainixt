@@ -97,7 +97,7 @@ capabilities: [
       name: "Case Studies",
       description: "See how Brainixt drives impact.",
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
-      slug:"/case-studies",
+      slug:"/company-studies",
     },
     {
       name: "People",
@@ -120,20 +120,12 @@ capabilities: [
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
       slug: "/insights",
     },
-        {
-      name: "Brainixt in India",
-      description: "Explore BCG’s work in India.",
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
-    },
-    {
-      name: "Brainixt Alumni",
-      description: "Access alumni network.",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
-    },
+        
     {
       name: "Join Us",
       description: "Careers and opportunities at BCG.",
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      slug: "/careers",
     },
   ],
 };
@@ -160,8 +152,6 @@ const SidebarMenu = ({ open, setOpen }) => {
           placeholder="Type to search"
           className="ml-6 flex-1 px-5 py-2 border rounded-full outline-none"
         />
-
-        <button className="ml-4 font-medium text-white">LOG IN</button>
       </div>
 
       {/* MAIN */}

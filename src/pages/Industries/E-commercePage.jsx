@@ -131,9 +131,11 @@ export default function EcommercePage() {
 
       {/* CTA */}
       <div className="text-center mt-10">
-        <button className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-400 to-orange-400 text-black font-medium hover:scale-105 transition">
-          Optimize Your Commerce
-        </button>
+        <Link to="/parth-jain">
+          <button className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-400 to-orange-400 text-black font-medium hover:scale-105 transition">
+            Optimize Your Commerce
+          </button>
+        </Link>
       </div>
 
     </div>

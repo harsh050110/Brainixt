@@ -1,42 +1,50 @@
+import Parth from "../../assets/Parth-Jain.png";
+import Vinit from "../../assets/Vinit-Jha.png";
+import Harsh from "../../assets/Harsh.jpeg";
+import Bhavesh from"../../assets/Bhavesh-Jain.png";
+import Sajal from "../../assets/Sajal-Jain.png";
+import Shashank from "../../assets/Shashank-Jain.png";
 export default function PeoplePage() {
   const founder = {
     name: "Parth Jain",
     role: "Founder & Managing Partner",
     desc: "Leads Brainixt with a focus on scalable digital ecosystems and structured growth systems.",
-    image: "https://i.pravatar.cc/200?img=1",
-    link: "#",
+    image: Parth,
+    link: "https://www.linkedin.com/in/parthjainync/",
   };
 
 const team = [
   {
     name: "Bhavesh Jain",
     role: "Chief Technology Officer (CTO)",
-    image: "https://i.pravatar.cc/200?img=2",
+    image: Bhavesh,
     link: "https://www.linkedin.com/in/bhavesh-jain-b07098152/",
     desc: "Leads technology architecture and infrastructure, building scalable and high-performance systems for long-term growth.",
   },
   {
     name: "Sajal Jain",
     role: "Chief Marketing Officer (CMO)",
-    image: "https://i.pravatar.cc/200?img=3",
+    image: Sajal,
     link: "https://www.linkedin.com/in/sajal-jain-designer/",
     desc: "Leads growth and market expansion through structured acquisition systems and performance-driven strategies.",
   },
   {
     name: "CA Shashank Jain",
     role: "Chief Financial Officer (CFO)",
-    image: "https://i.pravatar.cc/200?img=4",
+    image: Shashank,
     link: "https://www.linkedin.com/in/ca-shashank-jain-2a5600112/",
     desc: "Provides financial leadership, ensuring scalable business models, compliance, and long-term sustainability.",
   },
   {
     name: "Harsh Kumar",
     role: "Strategy & Operations",
-    image: "https://i.pravatar.cc/200?img=5",
+    image: Harsh,
     link: "https://harshdev05.vercel.app/",
     desc: "Supports execution and operational alignment, ensuring structured and efficient transformation delivery.",
   },
+
 ];
+
 
   return (
     <div className="bg-[#020617] text-white min-h-screen pt-28 px-4 sm:px-8 md:px-16 pb-20">
@@ -133,6 +141,46 @@ const team = [
   ))}
 </div>
       </section>
+            {/* STRATEGIC ADVISORY */}
+<section className="max-w-5xl mx-auto mb-20">
+  <h2 className="text-lg font-semibold text-center mb-10">
+    Strategic Advisory
+  </h2>
+
+  <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400/40 transition">
+
+    {/* Image */}
+    <img
+      src={Vinit}
+      alt="Adv. Vinit Jha"
+      className="w-24 h-24 rounded-full object-cover mb-4"
+    />
+
+    {/* Name */}
+    <h3 className="text-sm font-semibold">
+      Adv. Vinit Jha
+    </h3>
+
+    {/* Role */}
+    <p className="text-indigo-300 text-xs mb-3">
+      Legal & Regulatory Advisor
+    </p>
+
+    {/* Description */}
+    <p className="text-gray-400 text-sm max-w-xl leading-relaxed mb-4">
+      Adv. Vinit Jha provides strategic guidance on compliance frameworks, regulatory alignment, and legal risk management across engagements. He supports organizations in building growth initiatives on a strong legal foundation—ensuring governance, contract structuring, and long-term operational stability.
+    </p>
+
+    {/* Button */}
+    <a
+      href="https://www.linkedin.com/in/vinit-kumar-jha-2b4829221?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+      className="px-4 py-1 text-xs rounded-full bg-indigo-500 hover:bg-indigo-600 transition"
+    >
+      View Profile
+    </a>
+
+  </div>
+</section>
 
       {/* SUPPORT */}
       <section className="max-w-4xl mx-auto text-center mb-16">

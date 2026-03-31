@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function RealEstatePage() {
   const data = {
     title: "Real Estate & PropTech",
@@ -155,9 +156,11 @@ export default function RealEstatePage() {
 
       {/* CTA */}
       <div className="text-center mt-10">
+        <Link to="/parth-jain">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 text-black font-medium hover:scale-105 transition">
           Build Your Infrastructure
         </button>
+        </Link>
       </div>
 
     </div>

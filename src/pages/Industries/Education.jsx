@@ -137,9 +137,11 @@ export default function EdtechPage() {
 
       {/* CTA */}
       <div className="text-center mt-10">
+<Link to ="/parth-jain">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-sky-400 to-blue-500 text-black font-medium hover:scale-105 transition">
           Build Learning Systems
         </button>
+        </Link>
       </div>
 
     </div>

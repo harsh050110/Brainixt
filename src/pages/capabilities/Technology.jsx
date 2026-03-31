@@ -112,9 +112,11 @@ export default function TechnologyPage() {
 
       {/* CTA */}
       <div className="text-center mt-10 relative z-10">
+        <link to="/contact">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 text-black font-medium hover:scale-105 transition">
           Explore Solutions
         </button>
+        </link>
       </div>
 
     </div>
