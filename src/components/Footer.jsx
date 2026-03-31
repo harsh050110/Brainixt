@@ -12,9 +12,11 @@ export default function Footer() {
         <p className="text-gray-400 text-sm mb-4 max-w-2xl mx-auto">
           Brainixt partners with organizations seeking structured growth and scalable digital ecosystems.
         </p>
+        <Link to="/contact">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-400 to-purple-500 text-black font-medium hover:scale-105 transition">
           Start a Strategic Conversation
         </button>
+        </Link>
       </div>
 
       {/* MAIN FOOTER */}
