@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
+import Growth from "../assets/Growth.jpg";
+import Technology from "../assets/tech.png";
+import Operation from "../assets/operation.jpg";
+import ProfessionalServices from "../assets/Professional.jpg";
+
 // cspell:ignore Ecommerce
 import Ecommerce from "../assets/Ecommerce.jpg";
 
@@ -45,6 +50,12 @@ const sectionsData = {
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       slug: "/saas",
     },
+    {
+      name:"Professional Services & B2B",
+      description: "Lead generation systems and digital client experiences.",
+      image: ProfessionalServices,
+      slug: "/professional-services",
+    }
   ],
 
   capabilities: [
@@ -63,6 +74,19 @@ const sectionsData = {
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       slug: "/technology",
     },
+    {
+      name: "Growth Systems & Performance Marketing",
+      description:"Driving customer acquistion and retention through data-driven growth loops.",
+      image: Growth,
+      slug: "/growth",
+    },
+    {
+      name: "Operations & Organizational Design",
+      description:"Building operational systems and organizational structures for scale.",
+      image: Operation,
+      slug: "/operations",
+    }
+
   ],
 
   company: [

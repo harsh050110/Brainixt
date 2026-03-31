@@ -81,7 +81,7 @@ const Hero = () => {
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">CASE STUDY</p>
-              <Link to="/technology">
+              <Link to="/contact">
                 <h2 className="text-sm sm:text-lg font-semibold hover:text-indigo-400 transition cursor-pointer">
                   Driving enterprise growth →
                 </h2>
