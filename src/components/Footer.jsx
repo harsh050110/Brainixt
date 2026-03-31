@@ -121,7 +121,7 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-3">Contact</h4>
           <ul className="space-y-2 text-sm">
             <li>contact@brainixt.com</li>
-            <li>+91 XXXXX XXXXX</li>
+            <li>+91 9599332870</li>
             <li className="text-gray-500 text-xs mt-2">
               Global Consulting Engagements <br />
               Operating across India and international markets.
