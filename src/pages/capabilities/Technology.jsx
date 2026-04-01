@@ -1,3 +1,4 @@
+import {Link } from "react-router-dom";
 export default function TechnologyPage() {
   const data = {
     title: "Technology Architecture & Infrastructure",
@@ -112,11 +113,11 @@ export default function TechnologyPage() {
 
       {/* CTA */}
       <div className="text-center mt-10 relative z-10">
-        <link to="/contact">
+        <Link to="/contact">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 text-black font-medium hover:scale-105 transition">
           Explore Solutions
         </button>
-        </link>
+        </Link>
       </div>
 
     </div>

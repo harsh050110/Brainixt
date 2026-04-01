@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function TransformationPage() {
   const steps = [
     {
@@ -55,9 +57,6 @@ export default function TransformationPage() {
   return (
     <div className="relative bg-[#020617] text-white min-h-screen pt-28 px-4 sm:px-8 md:px-16 overflow-hidden">
 
-      {/* 🌈 Background Glow */}
-      <div className="absolute z-10 left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center font-bold shadow-lg"></div>
-
       {/* HERO */}
       <section className="text-center mb-20 relative z-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -71,63 +70,73 @@ export default function TransformationPage() {
         </p>
       </section>
 
-      {/* 🔄 TIMELINE */}
+      {/* TIMELINE */}
       <div className="max-w-6xl mx-auto relative z-10">
 
         {/* vertical line */}
-        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-500 to-indigo-500"></div>
+        <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-500 to-indigo-500"></div>
 
-        <div className="space-y-16">
+        <div className="space-y-20">
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`relative flex flex-col md:flex-row items-start ${
+              className={`relative flex flex-col md:flex-row ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
 
-              {/* STEP DOT */}
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center font-bold shadow-lg">
+              {/* DOT */}
+              <div className="absolute z-20 left-4 md:left-1/2 md:-translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center font-bold shadow-lg">
                 {index + 1}
               </div>
 
-              {/* CARD */}
-              <div className="ml-16 md:ml-0 md:w-1/2 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-400/40 transition group">
+              {/* CARD WRAPPER (IMPORTANT FIX) */}
+              <div
+                className={`
+                  w-full md:w-1/2
+                  pl-16 md:pl-0
+                  ${index % 2 === 0 ? "md:pr-20" : "md:pl-20"}
+                `}
+              >
+                <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-400/40 transition">
 
-                {/* TITLE */}
-                <h3 className="text-lg font-semibold mb-2 text-purple-300">
-                  {step.title}
-                </h3>
+                  {/* TITLE */}
+                  <h3 className="text-lg font-semibold mb-2 text-purple-300">
+                    {step.title}
+                  </h3>
 
-                {/* DESC */}
-                <p className="text-gray-400 text-sm mb-4">
-                  {step.desc}
-                </p>
+                  {/* DESC */}
+                  <p className="text-gray-400 text-sm mb-4">
+                    {step.desc}
+                  </p>
 
-                {/* DETAILS LIST */}
-                <ul className="space-y-2 mb-4">
-                  {step.details.map((item, i) => (
-                    <li
-                      key={i}
-                      className="text-gray-300 text-sm flex items-start gap-2"
-                    >
-                      <span className="text-purple-400">•</span> {item}
-                    </li>
-                  ))}
-                </ul>
+                  {/* DETAILS */}
+                  <ul className="space-y-2 mb-4">
+                    {step.details.map((item, i) => (
+                      <li
+                        key={i}
+                        className="text-gray-300 text-sm flex items-start gap-2"
+                      >
+                        <span className="text-purple-400">•</span> {item}
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* OUTCOME */}
-                <div className="mt-3 p-3 rounded-lg bg-purple-500/10 border border-purple-400/20 text-sm text-purple-200">
-                  <span className="font-medium">Outcome:</span> {step.outcome}
+                  {/* OUTCOME */}
+                  <div className="mt-3 p-3 rounded-lg bg-purple-500/10 border border-purple-400/20 text-sm text-purple-200">
+                    <span className="font-medium">Outcome:</span>{" "}
+                    {step.outcome}
+                  </div>
+
                 </div>
-
               </div>
+
             </div>
           ))}
         </div>
       </div>
 
-      {/* 🎯 FINAL STATEMENT */}
+      {/* FINAL TEXT */}
       <div className="max-w-3xl mx-auto text-center mt-24 relative z-10">
         <p className="text-gray-400 text-sm md:text-base">
           This framework ensures clarity, accountability, and measurable results at every stage of transformation — enabling organizations to scale with confidence and control.

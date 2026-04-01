@@ -1,3 +1,4 @@
+import {Link } from "react-router-dom";
 export default function StrategyPage() {
   const data = {
     title: "Business & Digital Strategy",
@@ -105,11 +106,11 @@ export default function StrategyPage() {
         <p className="text-gray-400 mb-4">
           Build a strategy that drives real outcomes.
         </p>
-        <link to="/contact">
+        <Link to="/contact">
         <button className="px-6 py-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium hover:scale-105 transition">
           Get Started
         </button>
-        </link>
+        </Link>
       </div>
 
     </div>

@@ -18,125 +18,143 @@ import Ecommerce from "../assets/Ecommerce.jpg";
 
 const sectionsData = {
   industries: [
-    {
-      name: "Financial Service & FinTech",
-      description:
-        "Digital infrastructure, compliance alignment, performance systems, scalable platforms.",
-      image:
-        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      slug: "/financial",
-    },
-    {
-      name: "Real Estate & PropTech",
-      description:
-        "Lead systems, CRM integration, investor reporting, digital sales architecture.",
-      image:
-        "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
-      slug: "/real-estate",
-    },
-    {
-      name: "Education & EdTech",
-      description: "Scalable LMS platforms and growth systems.",
-      image:
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-      slug: "/education",
-    },
-    {
-      name: "E-commerce & Retail",
-      description: "Conversion systems and omnichannel strategy.",
-      image:
-        Ecommerce,
-      slug: "/ecommerce",
-    },
-    {
-      name: "SaaS & Technology Startups",
-      description: "Growth loops and technical architecture optimization.",
-      image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      slug: "/saas",
-    },
-    {
-      name:"Professional Services & B2B",
-      description: "Lead generation systems and digital client experiences.",
-      image: ProfessionalServices,
-      slug: "/professional-services",
-    }
-  ],
+  {
+    name: "Real Estate & PropTech",
+    description:
+      "Designing integrated digital ecosystems for real estate businesses, including CRM systems, lead architecture, investor platforms, and operational automation.",
+    image:
+      "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+    slug: "/real-estate",
+  },
+  {
+    name: "SaaS & High-Growth Startups",
+    description:
+      "Engineering scalable product infrastructure, growth systems, and performance analytics to support rapid expansion and market leadership.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    slug: "/saas",
+  },
+  {
+    name: "E-commerce & Direct-to-Consumer",
+    description:
+      "Building high-performance commerce ecosystems with conversion-focused platforms, lifecycle systems, and omnichannel growth strategies.",
+    image:
+      Ecommerce,
+    slug: "/e-commerce",
+  },
+  {
+    name: "Professional Services",
+    description:
+      "Transforming expertise-driven firms through digital positioning, client acquisition systems, workflow digitization, and performance analytics.",
+    image: ProfessionalServices,
+    slug: "/professional-services",
+  },
+  {
+    name: "Financial Services & FinTech",
+    description:
+      "Developing secure, scalable financial infrastructure with digital onboarding, platform integrations, analytics, and compliance-aligned systems.",
+    image:
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
+    slug: "/financial",
+  },
+  {
+    name: "Education & EdTech",
+    description:
+      "Creating scalable digital learning ecosystems with LMS platforms, enrollment systems, content infrastructure, and analytics-driven optimization.",
+    image:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+    slug: "/education",
+  },
+],
 
-  capabilities: [
-    {
-      name: "Business & Digital Strategy",
-      description: "Growth begins with clarity in strategy.",
-      image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      slug: "/business",
-    },
-    {
-      name: "Technology Architecture & Infrastructure",
-      description:
-        "Designing scalable and efficient digital systems.",
-      image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      slug: "/technology",
-    },
-    {
-      name: "Growth Systems & Performance Marketing",
-      description:"Driving customer acquistion and retention through data-driven growth loops.",
-      image: Growth,
-      slug: "/growth",
-    },
-    {
-      name: "Operations & Organizational Design",
-      description:"Building operational systems and organizational structures for scale.",
-      image: Operation,
-      slug: "/operations",
-    }
+capabilities: [
+  {
+    name: "Business & Digital Strategy",
+    description:
+      "Defining structured growth strategies, digital transformation roadmaps, and revenue systems aligned with long-term business objectives.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    slug: "/business",
+  },
+  {
+    name: "Technology Architecture & Infrastructure",
+    description:
+      "Designing and deploying scalable digital infrastructure, platform architecture, system integrations, and cloud-based environments.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    slug: "/technology",
+  },
+  {
+    name: "Growth & Market Expansion",
+    description:
+      "Building performance-driven acquisition, conversion, and retention systems to create predictable and scalable revenue pipelines.",
+    image: Growth,
+    slug: "/growth",
+  },
+  {
+    name: "Operational & Structural Advisory",
+    description:
+      "Optimizing operational processes, workflows, and organizational systems to support efficient and sustainable business expansion.",
+    image: Operation,
+    slug: "/operations",
+  },
+  {
+    name: "The Transfomation of Brainixt Model™",
+    description : "A structured, step-by-step approach to digital transformation that combines strategic clarity, architectural design, and performance optional to drive scalable griwth.",
+    image: Technology,
+    slug: "/transformation",
+  }
+],
 
-  ],
+company: [
+  {
+    name: "About Brainixt",
+    description:
+      "Discover Brainixt’s mission, approach, and commitment to building scalable and future-ready businesses.",
+    image:
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+    slug: "/about",
+  },
+  {
+    name: "Case Studies",
+    description:
+      "Explore how Brainixt delivers measurable impact through structured transformation and growth systems.",
+    image:
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+    slug: "/case-studies",
+  },
+  {
+    name: "Office",
+    description:
+      "Take a look inside our work environment, culture, and operational philosophy.",
+    image: Office,
+    slug: "/offices",
+  },
+  {
+    name: "People",
+    description:
+      "Meet the team behind Brainixt’s strategy, technology, and growth expertise.",
+    image: People,
+    slug: "/people",
+  }
+],
 
-  company: [
-    {
-      name: "About Brainixt",
-      description: "Learn about Brainixt's history and mission.",
-      image:
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
-      slug: "/about",
-    },
-    {
-      name: "Case Studies",
-      description: "See how Brainixt drives impact.",
-      image:
-        "https://images.unsplash.com/photo-1556761175-4b46a572b786",
-      slug: "/company-studies",
-    },
-    {
-      name:"Office",
-      description: "Explore our office and culture.",
-      image: Office,
-      slug: "/offices",
-    },
-    {
-      name:"People",
-      description: "Meet the Brainixt team.",
-      image: People,
-      slug: "/people",
-    }
-  ],
-
-  simplePages: [
-    {
-      name: "Our Insights",
-      description: "Explore our latest insights and thought  leadership.",
-      image: OurInsights,
-      slug: "/insights",
-    },
-    {
-      name: "Join Us",
-      description: "Explore Careers at Brainixt and join our mission.",
-      image: JoinUs,
-      slug: "/contact",
-    },
-  ],
+simplePages: [
+  {
+    name: "Our Insights",
+    description:
+      "Access thought leadership, strategic perspectives, and insights on digital transformation and scalable growth.",
+    image: OurInsights,
+    slug: "/insights",
+  },
+  {
+    name: "Join Us",
+    description:
+      "Explore career opportunities and become part of a team focused on building high-impact digital systems.",
+    image: JoinUs,
+    slug: "/contact",
+  },
+],
   
 };
 
@@ -155,8 +173,12 @@ const SidebarMenu = ({ open, setOpen }) => {
       {/* TOP BAR */}
       <div className="flex items-center gap-3 px-4 sm:px-6 py-4 border-b border-white/10">
         <button onClick={() => setOpen(false)}>✕</button>
-
-        <img src={logo} alt="logo" className="h-8 sm:h-10" />
+        <img
+  src={logo}
+  alt="Brainixt Logo"
+  className="h-14 md:h-16 lg:h-20 object-contain cursor-pointer"
+  onClick={() => navigate("/")}
+/>
 
         <input
           placeholder="Type to search"

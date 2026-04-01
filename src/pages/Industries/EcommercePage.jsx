@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function EcommercePage() {
   const data = {
     title: "E-commerce & Direct-to-Consumer Brands",

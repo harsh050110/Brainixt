@@ -15,15 +15,15 @@ import WorkingPage from "./pages/Brainixt/Working";
 import Financial from "./pages/Industries/FinancialPage";
 import RealEstate from "./pages/Industries/RealEstate";
 import Education from "./pages/Industries/Education";
-import EcommercePage from "./pages/Industries/E-commercePage";
+import EcommercePage from "./pages/Industries/EcommercePage";
 import SaasPage from "./pages/Industries/SaasPage";
 import ProfessionalServicesPage from "./pages/Industries/ProfessionalPage";
 import AboutPage from "./pages/AboutUs";
 import ContactPage from "./pages/ContactUs";
 import PeoplePage from "./pages/Company/people";
 import OfficePage from "./pages/Company/Office";
-import CompanyStudies from "./pages/Company/companystudies";
 import ParthJain from "./pages/Brainixt/ParthJain";
+import CaseStudies from "./pages/Company/casestudies";
 
 function App() {
   return ( 
@@ -49,15 +49,15 @@ function App() {
         <Route path="/financial" element={<Financial />} />
         <Route path="/real-estate" element={<RealEstate />} />
         <Route path="/education" element={<Education />} />
-        <Route path="/ecommerce" element={<EcommercePage />} />
+        <Route path="/e-commerce" element={<EcommercePage />} />
         <Route path="/saas" element={<SaasPage />} />
         <Route path="/professional-services" element={<ProfessionalServicesPage />} />
         <Route path="/about" element={<AboutPage />} />
         {/* Companies */}
         <Route path="/people" element={<PeoplePage />} />
         <Route path="/offices" element={<OfficePage />} />
-        <Route path="/company-studies" element={<CompanyStudies />} />
         <Route path="/parth-jain" element={<ParthJain />}/>
+        <Route path="/case-studies" element={<CaseStudies />} />
       </Routes>
       <Footer/>
     </div>

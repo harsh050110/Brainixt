@@ -65,7 +65,7 @@ const handleSearch = (e) => {
           <img
   src={logo}
   alt="Brainixt Logo"
-  className="h-10 object-contain cursor-pointer"
+  className="h-14 md:h-16 lg:h-20 object-contain cursor-pointer"
   onClick={() => navigate("/")}
 />
 

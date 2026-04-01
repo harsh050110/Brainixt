@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function EdtechPage() {
   const data = {
     title: "Education & EdTech",
