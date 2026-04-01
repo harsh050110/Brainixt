@@ -5,6 +5,11 @@ import Growth from "../assets/Growth.jpg";
 import Technology from "../assets/tech.png";
 import Operation from "../assets/operation.jpg";
 import ProfessionalServices from "../assets/Professional.jpg";
+import Office from "../assets/Office.jpg";
+import People from "../assets/People.jpg";
+import OurInsights from "../assets/Insight.jpg";
+import JoinUs from "../assets/Join Us.jpg";
+
 
 // cspell:ignore Ecommerce
 import Ecommerce from "../assets/Ecommerce.jpg";
@@ -104,18 +109,54 @@ const sectionsData = {
         "https://images.unsplash.com/photo-1556761175-4b46a572b786",
       slug: "/company-studies",
     },
+    {
+      name:"Office",
+      description: "Explore our office and culture.",
+      image: Office,
+      slug: "/offices",
+    },
+    {
+      name:"People",
+      description: "Meet the Brainixt team.",
+      image: People,
+      slug: "/people",
+    }
   ],
 
   simplePages: [
     {
       name: "Our Insights",
+      description: "Explore our latest insights and thought  leadership.",
+      image: OurInsights,
       slug: "/insights",
     },
     {
       name: "Join Us",
-      slug: "/careers",
+      description: "Explore Careers at Brainixt and join our mission.",
+      image: JoinUs,
+      slug: "/contact",
     },
   ],
+  Brainixt: [
+    {
+      name: "Transformation",
+      description: "Our approach to driving transformative growth.",
+      image: Transformation,
+      slug: "/transformation",
+    },
+    {
+      name: "Founder",
+      description: "Meet Parth Jain, Founder of Brainixt.",
+      image: ParthJain,
+      slug: "/parth-jain",
+    },
+    {
+      name: "Working at Brainixt",
+      description: "Discover our culture and what it's like to work at Brainixt.",
+      image: JoinUs,
+      slug: "/working",
+    }
+  ]
 };
 
 /* ================= COMPONENT ================= */
