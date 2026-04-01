@@ -24,7 +24,10 @@ import PeoplePage from "./pages/Company/people";
 import OfficePage from "./pages/Company/Office";
 import ParthJain from "./pages/Brainixt/ParthJain";
 import CaseStudies from "./pages/Company/casestudies";
-
+import High from "./pages/HeroBox/High";
+import GrowthPage from "./pages/HeroBox/Growth";
+import BrainixtPage from "./pages/HeroBox/Brainixt";
+import LeadershipInsightsPage from "./pages/HeroBox/Leadership";
 function App() {
   return ( 
     <div className="bg-gray-50 min-h-screen">
@@ -58,6 +61,11 @@ function App() {
         <Route path="/offices" element={<OfficePage />} />
         <Route path="/parth-jain" element={<ParthJain />}/>
         <Route path="/case-studies" element={<CaseStudies />} />
+        {/* Hero */}
+        <Route path="/high" element={<High/>}/>
+        <Route path="/growth-case-study" element={<GrowthPage/>}/>
+        <Route path="/brainixt-hero" element={<BrainixtPage />}/>
+        <Route path="/leadership" element={<LeadershipInsightsPage />}/>
       </Routes>
       <Footer/>
     </div>

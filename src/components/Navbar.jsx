@@ -96,7 +96,7 @@ const handleSearch = (e) => {
           {/* Login */}
           <button
   onClick={() => navigate("/contact")}
-  className="px-5 py-2 border border-white/20 rounded-full text-sm text-white hover:border-green-400 transition"
+  className="px-5 py-2 border border-white/20 rounded-full text-sm text-white hover:border-purple-600 transition"
 >
   Contact Us
 </button>

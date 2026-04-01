@@ -66,9 +66,11 @@ const Hero = () => {
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">INSIGHT</p>
+              <Link to="/leadership">
               <h2 className="text-sm sm:text-lg font-semibold">
                 Building scalable digital ecosystems →
               </h2>
+              </Link>
             </div>
           </div>
 
@@ -81,7 +83,7 @@ const Hero = () => {
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">CASE STUDY</p>
-              <Link to="/contact">
+              <Link to="/growth-case-study">
                 <h2 className="text-sm sm:text-lg font-semibold hover:text-indigo-400 transition cursor-pointer">
                   Driving enterprise growth →
                 </h2>
@@ -104,10 +106,11 @@ const Hero = () => {
 
             <div>
               <p className="text-xs sm:text-sm text-gray-300">FEATURED</p>
-
+              <Link to="/brainixt-hero">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mt-2 leading-snug">
                 How Brainixt helps organizations scale with precision, speed, and impact
               </h2>
+              </Link>
             </div>
 
             <Link to="/about">
@@ -134,9 +137,11 @@ const Hero = () => {
           />
           <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <p className="text-xs text-gray-300">INSIGHT</p>
+            <Link to="/leadership">
             <h2 className="text-sm sm:text-lg font-semibold">
               Scaling leadership in modern enterprises
             </h2>
+            </Link>
           </div>
         </div>
 
@@ -149,7 +154,7 @@ const Hero = () => {
           />
           <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <p className="text-xs text-gray-300">BLOG</p>
-            <Link to="/company-studies">
+            <Link to="/high">
               <h2 className="text-sm sm:text-lg font-semibold">
                 High-performance growth systems →
               </h2>
