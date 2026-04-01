@@ -44,7 +44,7 @@ const handleSearch = (e) => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-10 py-5
+      <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-5
       bg-[#020617]/80 backdrop-blur-md border-b border-white/10 text-white">
 
         {/* LEFT */}
@@ -62,12 +62,12 @@ const handleSearch = (e) => {
             </div>
           </button>
 
-          <img
-  src={logo}
-  alt="Brainixt Logo"
-  className="h-14 md:h-16 lg:h-20 object-contain cursor-pointer"
-  onClick={() => navigate("/")}
-/>
+<img
+    src={logo}
+    alt="Brainixt Logo"
+    className="h-12 relative z-50"
+    onClick={() => navigate("/")}
+  />
 
         </div>
 
