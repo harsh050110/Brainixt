@@ -137,26 +137,7 @@ const sectionsData = {
       slug: "/contact",
     },
   ],
-  Brainixt: [
-    {
-      name: "Transformation",
-      description: "Our approach to driving transformative growth.",
-      image: Transformation,
-      slug: "/transformation",
-    },
-    {
-      name: "Founder",
-      description: "Meet Parth Jain, Founder of Brainixt.",
-      image: ParthJain,
-      slug: "/parth-jain",
-    },
-    {
-      name: "Working at Brainixt",
-      description: "Discover our culture and what it's like to work at Brainixt.",
-      image: JoinUs,
-      slug: "/working",
-    }
-  ]
+  
 };
 
 /* ================= COMPONENT ================= */
