@@ -3,8 +3,7 @@ import Blog from "../assets/Blog.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[90px] pb-12">
-
+    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[110px] pb-12">
       {/* TOP GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 

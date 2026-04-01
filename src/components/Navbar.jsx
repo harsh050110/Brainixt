@@ -65,7 +65,7 @@ const handleSearch = (e) => {
 <img
     src={logo}
     alt="Brainixt Logo"
-    className="h-12 relative z-50"
+    className="h-16 relative z-50"
     onClick={() => navigate("/")}
   />
 
