@@ -37,7 +37,6 @@ export default function Footer() {
   <li><Link to="/" className="hover:text-white">Home</Link></li>
   <li><Link to="/about" className="hover:text-white">About Brainixt</Link></li>
   <li><Link to="/about" className="hover:text-white">Founder</Link></li>
-  <li><span className="text-gray-500">Careers</span></li>
   <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
 </ul>
         </div>

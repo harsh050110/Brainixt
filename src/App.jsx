@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Insights from "./pages/Insights/Insights";
+
 import Technology from "./pages/capabilities/Technology";
 import Business from "./pages/capabilities/Business";
 import Growth from "./pages/capabilities/Growth";
@@ -18,57 +18,86 @@ import Education from "./pages/Industries/Education";
 import EcommercePage from "./pages/Industries/EcommercePage";
 import SaasPage from "./pages/Industries/SaasPage";
 import ProfessionalServicesPage from "./pages/Industries/ProfessionalPage";
+
 import AboutPage from "./pages/AboutUs";
 import ContactPage from "./pages/ContactUs";
+
 import PeoplePage from "./pages/Company/people";
 import OfficePage from "./pages/Company/Office";
+import CaseStudies from "./pages/Company/casestudies"; 
+
 import ParthJain from "./pages/Brainixt/ParthJain";
-import CaseStudies from "./pages/Company/casestudies";
+
 import High from "./pages/HeroBox/High";
 import GrowthPage from "./pages/HeroBox/Growth";
 import BrainixtPage from "./pages/HeroBox/Brainixt";
 import LeadershipInsightsPage from "./pages/HeroBox/Leadership";
+
+// ✅ FIXED folder name (no spaces)
+import SystemPage from "./pages/Brainixt Insights/System";
+import LeadershipInsights from "./pages/Brainixt Insights/Leadership";
+import DigitalAlignmentInsights from "./pages/Brainixt Insights/Alignment";
+import PerformanceDrivenInsights from "./pages/Brainixt Insights/Driven";
+
+import EPage from "./pages/Outcomes/EPage";
+import EcommerceGrowthPage from "./pages/Outcomes/e-commerce";
+import Scaling from "./pages/Outcomes/Scaling";
+
 function App() {
-  return ( 
-    <div className="bg-gray-50 min-h-screen">
-      <Navbar />
+  return (
+      <div className="bg-gray-50 min-h-screen">
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Routes>
+          {/* Home */}
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
 
-        {/* Capabilities */}
-        <Route path="/insights" element={<Insights />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/business" element={<Business />} />
-        <Route path="/growth" element={<Growth />} />
-        <Route path="/operations" element={<OperationsPage />} />
+          {/* Capabilities */}
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/business" element={<Business />} />
+          <Route path="/growth" element={<Growth />} />
+          <Route path="/operations" element={<OperationsPage />} />
 
-        {/* Brainixt */}
-        <Route path="/transformation" element={<Transformation />} />
-        <Route path="/working" element={<WorkingPage />} />
+          {/* Brainixt */}
+          <Route path="/transformation" element={<Transformation />} />
+          <Route path="/working" element={<WorkingPage />} />
 
-        {/* Industries */}
-        <Route path="/financial" element={<Financial />} />
-        <Route path="/real-estate" element={<RealEstate />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/e-commerce" element={<EcommercePage />} />
-        <Route path="/saas" element={<SaasPage />} />
-        <Route path="/professional-services" element={<ProfessionalServicesPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        {/* Companies */}
-        <Route path="/people" element={<PeoplePage />} />
-        <Route path="/offices" element={<OfficePage />} />
-        <Route path="/parth-jain" element={<ParthJain />}/>
-        <Route path="/case-studies" element={<CaseStudies />} />
-        {/* Hero */}
-        <Route path="/high" element={<High/>}/>
-        <Route path="/growth-case-study" element={<GrowthPage/>}/>
-        <Route path="/brainixt-hero" element={<BrainixtPage />}/>
-        <Route path="/leadership" element={<LeadershipInsightsPage />}/>
-      </Routes>
-      <Footer/>
-    </div>
+          {/* Industries */}
+          <Route path="/financial" element={<Financial />} />
+          <Route path="/real-estate" element={<RealEstate />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/e-commerce" element={<EcommercePage />} />
+          <Route path="/saas" element={<SaasPage />} />
+          <Route path="/professional-services" element={<ProfessionalServicesPage />} />
+
+          {/* Company */}
+          <Route path="/people" element={<PeoplePage />} />
+          <Route path="/offices" element={<OfficePage />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/parth-jain" element={<ParthJain />} />
+
+          {/* Hero */}
+          <Route path="/high" element={<High />} />
+          <Route path="/growth-case-study" element={<GrowthPage />} />
+          <Route path="/brainixt-hero" element={<BrainixtPage />} />
+          <Route path="/leadership" element={<LeadershipInsightsPage />} />
+
+          {/* Extra */}
+          <Route path="/systems" element={<SystemPage />} />
+          <Route path="/leadershippage" element={<LeadershipInsights />} />
+          <Route path="/alignment" element={<DigitalAlignmentInsights />} />
+          <Route path="/driven" element={<PerformanceDrivenInsights />} /> 
+
+          
+          <Route path="/epage" element={<EPage />} />
+          <Route path="/ecommerce-optimized" element={<EcommerceGrowthPage />} />
+          <Route path="/scaling" element={<Scaling />} />
+        </Routes>
+
+        <Footer />
+      </div>
   );
 }
 

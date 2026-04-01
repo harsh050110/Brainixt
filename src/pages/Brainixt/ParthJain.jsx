@@ -1,3 +1,4 @@
+// import Parth from "../../assets/Parth2.png";
 export default function ParthJain() {
   return (
     <div className="bg-[#020617] text-white min-h-screen pt-28 px-4 sm:px-8 md:px-16 pb-20">
