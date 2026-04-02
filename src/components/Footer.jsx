@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
@@ -70,14 +70,11 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-3">Insights</h4>
          <ul className="space-y-2 text-sm">
   <li><Link to="/insights" className="hover:text-white">Brainixt Insights</Link></li>
-  <li><Link to="/insights" className="hover:text-white">Strategy Perspectives</Link></li>
-  <li><Link to="/insights" className="hover:text-white">Industry Analysis</Link></li>
-  <li><Link to="/insights" className="hover:text-white">Research & Frameworks</Link></li>
 </ul>
  {/* SOCIAL ICONS */}
         <div className="flex gap-4 text-gray-400">
 <a 
-  href="https://linkedin.com" 
+  href="https://www.linkedin.com/company/brainixt/?viewAsMember=true" 
   target="_blank" 
   rel="noopener noreferrer"
   className="p-2 rounded-full hover:bg-white/10 transition group"
@@ -89,7 +86,7 @@ export default function Footer() {
 </a>
 
   <a 
-    href="https://instagram.com" 
+    href="https://www.instagram.com/brainixt/" 
     target="_blank" 
     rel="noopener noreferrer"
     className="p-2 rounded-full hover:bg-white/10 transition group"
@@ -101,7 +98,7 @@ export default function Footer() {
   </a>
 
   <a 
-    href="https://twitter.com" 
+    href="https://x.com/brainixt" 
     target="_blank" 
     rel="noopener noreferrer"
     className="p-2 rounded-full hover:bg-white/10 transition group"
@@ -109,6 +106,27 @@ export default function Footer() {
     <FaXTwitter
       size={20}
       className="transition group-hover:text-gray-500 group-hover:scale-110"
+    />
+  </a>
+  <a href="https://www.youtube.com/channel/UCS9yTV69guZ5Mau9Fki8fBQ"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-2 rounded-full hover:bg-white/10 transition group"
+  >
+    <FaYoutube
+    size={20}
+    className="transition group-hover:text-gray-500 group-hover:scale-110"
+    />
+  </a>
+  <a 
+  href="https://www.facebook.com/brainixt"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-2 rounded-full hover:bg-red-600 transition group"
+  >
+    <FaFacebook
+    size={20}
+    className="transition group-hover:text-sky-400 group-hover:scale-110"
     />
   </a>
 

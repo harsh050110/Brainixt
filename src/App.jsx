@@ -45,6 +45,11 @@ import EcommerceGrowthPage from "./pages/Outcomes/e-commerce";
 import Scaling from "./pages/Outcomes/Scaling";
 import InsightsPage from "./pages/Insights/Insights";
 
+import Privacy from "./pages/Footer/Privacy";
+import Terms from "./pages/Footer/Terms";
+import Cookies from "./pages/Footer/Cookies";
+import Disclaimer from "./pages/Footer/Disclaimer";
+
 function App() {
   return (
       <div className="bg-gray-50 min-h-screen">
@@ -97,7 +102,14 @@ function App() {
           <Route path="/epage" element={<EPage />} />
           <Route path="/ecommerce-optimized" element={<EcommerceGrowthPage />} />
           <Route path="/scaling" element={<Scaling />} />
+
+          {/* Footer */}
+          <Route path="/privacy" element={<Privacy />}/>
+          <Route path="/terms" element={<Terms />}/>
+          <Route path="/cookies" element={<Cookies />}/>
+          <Route path="/disclaimer" element={<Disclaimer />}/>
         </Routes>
+
 
         <Footer />
       </div>
