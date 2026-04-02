@@ -105,14 +105,14 @@ const Hero = () => {
 
             <div>
               <p className="text-xs sm:text-sm text-gray-300">FEATURED</p>
-              <Link to="/brainixt-hero">
+              
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mt-2 leading-snug">
                 How Brainixt helps organizations scale with precision, speed, and impact
               </h2>
-              </Link>
+              
             </div>
 
-            <Link to="/about">
+            <Link to="/case-studies">
               <button className="bg-white text-black px-4 py-2 rounded-md w-fit">
                 View Case Study →
               </button>

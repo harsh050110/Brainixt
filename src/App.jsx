@@ -32,6 +32,7 @@ import High from "./pages/HeroBox/High";
 import GrowthPage from "./pages/HeroBox/Growth";
 import BrainixtPage from "./pages/HeroBox/Brainixt";
 import LeadershipInsightsPage from "./pages/HeroBox/Leadership";
+import Insights from "./pages/Insights/Insights";
 
 // ✅ FIXED folder name (no spaces)
 import SystemPage from "./pages/Brainixt Insights/System";
@@ -42,6 +43,7 @@ import PerformanceDrivenInsights from "./pages/Brainixt Insights/Driven";
 import EPage from "./pages/Outcomes/EPage";
 import EcommerceGrowthPage from "./pages/Outcomes/e-commerce";
 import Scaling from "./pages/Outcomes/Scaling";
+import InsightsPage from "./pages/Insights/Insights";
 
 function App() {
   return (
@@ -63,6 +65,7 @@ function App() {
           {/* Brainixt */}
           <Route path="/transformation" element={<Transformation />} />
           <Route path="/working" element={<WorkingPage />} />
+          <Route path="/insights" element={<InsightsPage />}/>
 
           {/* Industries */}
           <Route path="/financial" element={<Financial />} />
