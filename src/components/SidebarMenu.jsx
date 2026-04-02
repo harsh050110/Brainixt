@@ -139,8 +139,9 @@ company: [
   }
 ],
 
+
 simplePages: [
-  {
+    {
     name: "Our Insights",
     description:
       "Access thought leadership, strategic perspectives, and insights on digital transformation and scalable growth.",

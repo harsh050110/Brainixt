@@ -180,7 +180,7 @@ export default function ContactPage() {
 
       {/* FOUNDER */}
       <section className="text-center mb-16">
-        <h2 className="text-xl font-semibold mb-2">Founder Contact</h2>
+        <h2 className="text-xl font-semibold mb-2">Connect With</h2>
         <p className="text-white font-medium">Parth Jain</p>
         <p className="text-gray-400 text-sm">Founder & Managing Partner</p>
         <p className="text-indigo-400 text-sm mt-2 cursor-pointer hover:underline">

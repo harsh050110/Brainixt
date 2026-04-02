@@ -36,7 +36,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                to="/capabilities"
+                to="/technology"
                 className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition text-center"
               >
                 Explore Our Capabilities
@@ -44,12 +44,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Arrow Button */}
-          <div className="mt-8 sm:mt-10">
-            <button className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
-              →
-            </button>
-          </div>
 
         </div>
 
@@ -65,7 +59,7 @@ const Hero = () => {
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">INSIGHT</p>
-              <Link to="/leadership">
+              <Link to="/digitalecosystem">
               <h2 className="text-sm sm:text-lg font-semibold">
                 Building scalable digital ecosystems →
               </h2>
@@ -112,7 +106,7 @@ const Hero = () => {
               
             </div>
 
-            <Link to="/case-studies">
+            <Link to="/how">
               <button className="bg-white text-black px-4 py-2 rounded-md w-fit">
                 View Case Study →
               </button>

@@ -7,9 +7,15 @@ export default function Cookies() {
         <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
           Cookie Policy
         </h1>
-        <p className="text-gray-400 text-sm">Last Updated: [Insert Date]</p>
+        <p className="text-gray-400 text-sm">Last Updated: 05 April 2026</p>
+
         <p className="mt-6 text-gray-400 text-sm leading-relaxed">
-          This Cookie Policy explains how Brainixt uses cookies and similar technologies.
+          This Cookie Policy explains how Brainixt uses cookies and similar technologies on our website.
+          By continuing to browse or use our website, you agree to the use of cookies in accordance with this policy.
+        </p>
+
+        <p className="mt-4 text-gray-500 text-xs">
+          This policy should be read together with our Privacy Policy and Terms of Use.
         </p>
       </div>
 
@@ -19,7 +25,7 @@ export default function Cookies() {
         {sections.map((section, index) => (
           <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur">
 
-            <h2 className="text-lg font-semibold mb-3 text-indigo-400">
+            <h2 className="text-lg font-semibold mb-4 text-indigo-400">
               {section.title}
             </h2>
 
@@ -44,7 +50,7 @@ export default function Cookies() {
         <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-white/10 rounded-xl p-6 text-center">
           <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
           <p className="text-gray-400 text-sm mb-2">
-            If you have questions about our Cookie Policy:
+            If you have questions regarding this Cookie Policy:
           </p>
           <p className="text-indigo-400 text-sm">contact@brainixt.com</p>
           <p className="text-gray-500 text-xs mt-2">www.brainixt.com</p>
@@ -61,58 +67,70 @@ const sections = [
   {
     title: "1. What Are Cookies",
     content: [
-      "Cookies are small text files stored on your device when you visit a website.",
-      "They help websites function properly and improve user experience.",
-      "Cookies allow websites to remember preferences and enhance performance."
+      "Cookies are small text files that are stored on your device when you visit a website. They help websites function properly and provide information to website owners about how visitors interact with their site.",
+      "Cookies allow websites to remember user preferences, improve performance, and enhance the overall browsing experience.",
     ],
   },
   {
     title: "2. How Brainixt Uses Cookies",
     content: [
-      "We use cookies to improve functionality, analyze traffic, and enhance user experience.",
+      "Brainixt uses cookies to improve website functionality, analyze traffic, and enhance user experience.",
+      "Cookies may be used for the following purposes:",
       [
-        "Ensure proper website operation",
-        "Understand user interactions",
-        "Improve performance and usability",
-        "Analyze traffic and behavior",
-        "Support marketing efforts",
+        "Ensuring the website operates correctly",
+        "Understanding how visitors interact with our website",
+        "Improving website performance and usability",
+        "Analyzing website traffic and visitor behavior",
+        "Supporting marketing and communication activities",
       ],
+      "These insights help us continuously improve our website and services.",
     ],
   },
   {
     title: "3. Types of Cookies We Use",
     content: [
-      "Essential Cookies: Required for core functionality and security.",
-      "Performance & Analytics Cookies: Help track usage and improve experience.",
-      "Functional Cookies: Store preferences like settings or language.",
-      "Marketing Cookies: Help optimize marketing and communication efforts.",
+      "Essential Cookies: These cookies are necessary for the website to function properly. They enable core features such as navigation, page access, and security. Without these cookies, certain parts of the website may not function correctly.",
+
+      "Performance and Analytics Cookies: These cookies help us understand how visitors interact with our website by collecting anonymous data such as:",
+      [
+        "Pages visited",
+        "Time spent on the website",
+        "Navigation patterns",
+        "Website performance metrics",
+      ],
+      "This information helps us improve the website and user experience. Examples may include analytics services such as website traffic analysis tools.",
+
+      "Functional Cookies: Functional cookies allow the website to remember user preferences and settings, improving the overall browsing experience. These may include language preferences or other customization features.",
+
+      "Marketing Cookies: In some cases, cookies may be used to support marketing and communication activities by understanding user interactions with content and campaigns. These cookies help improve the relevance of marketing efforts.",
     ],
   },
   {
     title: "4. Third-Party Cookies",
     content: [
-      "We may use third-party services such as analytics tools.",
-      "These providers may place cookies on your device.",
-      "We do not control how third-party cookies are used."
+      "Our website may use services provided by third-party platforms such as analytics or communication tools. These services may place cookies on your device to collect information about website usage.",
+      "Brainixt does not control how these third-party services use cookies. Users are encouraged to review the privacy policies of those providers.",
     ],
   },
   {
     title: "5. Managing Cookies",
     content: [
-      "You can manage cookies through your browser settings.",
+      "Most web browsers allow users to manage or disable cookies through browser settings.",
+      "You may choose to:",
       [
         "Accept all cookies",
-        "Block certain cookies",
-        "Delete stored cookies",
+        "Block certain types of cookies",
+        "Delete cookies stored on your device",
       ],
-      "Disabling cookies may affect website performance."
+      "Please note that disabling cookies may affect the functionality and performance of the website.",
+      "For instructions on managing cookies, refer to the help section of your web browser.",
     ],
   },
   {
     title: "6. Updates to This Policy",
     content: [
-      "We may update this policy periodically.",
-      "Changes will be reflected with a revised date."
+      "Brainixt may update this Cookie Policy periodically to reflect changes in technology, legal requirements, or website functionality.",
+      "Any updates will be published on this page with a revised 'Last Updated' date.",
     ],
   },
 ];

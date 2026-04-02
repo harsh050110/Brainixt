@@ -189,14 +189,7 @@ export default function CaseStudiesPage() {
         </p>
       </div>
 
-      {/* CTA */}
-      <div className="text-center mt-12 relative z-10">
-        <Link to ="/contact">
-        <button className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-400 to-indigo-500 text-black font-medium hover:scale-105 transition">
-          Start a Strategic Consultation
-        </button>
-        </Link>
-      </div>
+
 
     </div>
   );

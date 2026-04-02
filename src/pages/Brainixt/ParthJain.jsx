@@ -1,4 +1,4 @@
-// import Parth from "../../assets/Parth2.png";
+ import Parth from "../../assets/Parth2.png";
 export default function ParthJain() {
   return (
     <div className="bg-[#020617] text-white min-h-screen pt-28 px-4 sm:px-8 md:px-16 pb-20">
@@ -6,7 +6,7 @@ export default function ParthJain() {
       {/* HERO */}
       <section className="text-center mb-16">
         <img
-          src="#"
+          src={Parth}
           alt="Parth Jain"
           className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-2 border-indigo-400"
         />

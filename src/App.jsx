@@ -33,6 +33,8 @@ import GrowthPage from "./pages/HeroBox/Growth";
 import BrainixtPage from "./pages/HeroBox/Brainixt";
 import LeadershipInsightsPage from "./pages/HeroBox/Leadership";
 import Insights from "./pages/Insights/Insights";
+import DigitalEcosystemPage from "./pages/HeroBox/Digital";
+import How from "./pages/HeroBox/How";
 
 // ✅ FIXED folder name (no spaces)
 import SystemPage from "./pages/Brainixt Insights/System";
@@ -49,6 +51,7 @@ import Privacy from "./pages/Footer/Privacy";
 import Terms from "./pages/Footer/Terms";
 import Cookies from "./pages/Footer/Cookies";
 import Disclaimer from "./pages/Footer/Disclaimer";
+import Use from "./pages/Footer/Use";
 
 function App() {
   return (
@@ -91,6 +94,8 @@ function App() {
           <Route path="/growth-case-study" element={<GrowthPage />} />
           <Route path="/brainixt-hero" element={<BrainixtPage />} />
           <Route path="/leadership" element={<LeadershipInsightsPage />} />
+          <Route path="/digitalecosystem" element={<DigitalEcosystemPage />}/>
+          <Route path="/how" element={<How />}/>
 
           {/* Extra */}
           <Route path="/systems" element={<SystemPage />} />
@@ -108,6 +113,7 @@ function App() {
           <Route path="/terms" element={<Terms />}/>
           <Route path="/cookies" element={<Cookies />}/>
           <Route path="/disclaimer" element={<Disclaimer />}/>
+          <Route path="/use" element={<Use />}/>
         </Routes>
 
 

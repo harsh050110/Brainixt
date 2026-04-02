@@ -7,7 +7,7 @@ export default function Privacy() {
         <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
           Privacy Policy
         </h1>
-        <p className="text-gray-400 text-sm">Last Updated: [Insert Date]</p>
+        <p className="text-gray-400 text-sm">Last Updated: 05 April 2026</p>
         <p className="mt-6 text-gray-400 text-sm leading-relaxed">
           Brainixt respects your privacy and is committed to protecting the personal information you provide when using our website.
         </p>
@@ -16,10 +16,9 @@ export default function Privacy() {
       {/* CONTENT */}
       <div className="max-w-4xl mx-auto space-y-10">
 
-        {/* SECTION */}
         {sections.map((section, index) => (
           <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur">
-            
+
             <h2 className="text-lg font-semibold mb-3 text-indigo-400">
               {section.title}
             </h2>
@@ -56,7 +55,6 @@ export default function Privacy() {
   );
 }
 
-
 /* DATA STRUCTURE */
 const sections = [
   {
@@ -72,19 +70,20 @@ const sections = [
         "Industry or organization details",
         "Project or inquiry information",
       ],
-      "This information is collected when you submit forms, request consultations, or communicate with us.",
-      "We also collect non-personal data such as IP address, browser type, device info, and user behavior."
+      "This information is typically collected when you submit a contact form, request a consultation, or communicate with our team.",
+      "Non-personal information such as IP address, browser type, device info, pages visited, time on site, and navigation behavior may also be collected automatically.",
     ],
   },
   {
     title: "2. How We Use Your Information",
     content: [
+      "Brainixt may use the information collected for the following purposes:",
       [
-        "Respond to inquiries and consultation requests",
-        "Provide service-related information",
-        "Improve website experience",
-        "Analyze traffic and behavior",
-        "Enhance marketing efforts",
+        "Responding to inquiries or consultation requests",
+        "Providing information about our consulting services",
+        "Improving website functionality and user experience",
+        "Analyzing website traffic and visitor behavior",
+        "Enhancing marketing and communication efforts",
       ],
       "We only use personal information for legitimate business purposes."
     ],
@@ -92,61 +91,68 @@ const sections = [
   {
     title: "3. Cookies and Tracking Technologies",
     content: [
-      "We use cookies to improve performance, understand behavior, and optimize user experience.",
+      "Brainixt may use cookies and similar technologies to enhance the browsing experience and analyze website usage.",
       [
         "Improve website performance",
         "Understand visitor behavior",
-        "Optimize navigation",
+        "Optimize website content and navigation",
       ],
+      "For more information, please review our Cookie Policy."
     ],
   },
   {
     title: "4. Information Sharing",
     content: [
-      "We do not sell or trade your data.",
-      "We may share data with trusted providers such as:",
+      "Brainixt does not sell, rent, or trade personal information to third parties.",
+      "We may share information with trusted third-party service providers who support our operations:",
       [
-        "Hosting providers",
-        "Analytics tools",
-        "Communication platforms",
+        "Website hosting providers",
+        "Analytics platforms",
+        "Communication tools",
       ],
+      "These providers are required to maintain confidentiality and security of your information."
     ],
   },
   {
     title: "5. Data Security",
     content: [
-      "We take reasonable steps to protect your data, but no system is completely secure.",
-      "Users share information at their own discretion.",
+      "Brainixt takes reasonable measures to protect personal information from unauthorized access, disclosure, or misuse.",
+      "While we strive to safeguard your data, no method of internet transmission or electronic storage is completely secure.",
+      "Users share information at their own discretion."
     ],
   },
   {
     title: "6. Third-Party Websites",
     content: [
-      "We may link to external websites. We are not responsible for their privacy practices.",
+      "Our website may contain links to external websites not operated by Brainixt.",
+      "We are not responsible for the privacy practices or policies of third-party websites.",
+      "Users are encouraged to review the privacy policies of those websites when visiting them."
     ],
   },
   {
     title: "7. Data Retention",
     content: [
-      "We retain data only as long as necessary unless required by law.",
+      "Brainixt retains personal information only as long as necessary to fulfill the purposes described, unless a longer retention period is required by law."
     ],
   },
   {
     title: "8. Your Rights",
     content: [
+      "Depending on your location, you may have certain rights regarding your personal data, including:",
       [
-        "Access your data",
-        "Correct inaccurate data",
-        "Request deletion",
-        "Restrict processing",
+        "Requesting access to your personal information",
+        "Requesting correction of inaccurate data",
+        "Requesting deletion of personal information",
+        "Requesting limitation of data processing",
       ],
-      "Contact us to exercise your rights.",
+      "To exercise these rights, please contact us using the information provided below."
     ],
   },
   {
     title: "9. Updates to This Policy",
     content: [
-      "We may update this policy periodically. Changes will be reflected with a new date.",
+      "Brainixt may update this Privacy Policy periodically to reflect changes in legal requirements, technology, or business practices.",
+      "Updates will be published on this page with a revised 'Last Updated' date."
     ],
   },
 ];

@@ -1,15 +1,15 @@
-export default function Terms() {
+export default function TermsOfUse() {
   return (
     <div className="bg-[#020617] text-white min-h-screen pt-28 px-6 md:px-16 pb-20">
 
       {/* HEADER */}
       <div className="max-w-4xl mx-auto mb-12 text-center">
         <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-          Terms & Conditions
+          Terms of Use
         </h1>
         <p className="text-gray-400 text-sm">Last Updated: 05 April 2026</p>
         <p className="mt-6 text-gray-400 text-sm leading-relaxed">
-          These Terms & Conditions govern your use of the Brainixt website and services.
+          These Terms of Use govern your access to and use of the Brainixt website and its services.
         </p>
       </div>
 
@@ -60,86 +60,94 @@ const sections = [
   {
     title: "1. About Brainixt",
     content: [
-      "Brainixt is a strategy-led technology and growth consulting firm providing advisory, digital strategy, and business growth services globally.",
-      "Information on this website is for general informational purposes regarding our services and capabilities."
+      "Brainixt is a strategy-led technology and growth consulting firm providing strategic advisory, digital infrastructure development, and growth consulting services globally.",
+      "Information on this website is for general informational purposes regarding Brainixt’s capabilities and services."
     ],
   },
   {
-    title: "2. Use of the Website",
+    title: "2. Acceptance of Terms",
     content: [
-      "By using this website, you agree to use it lawfully and in accordance with these terms.",
+      "By accessing this website, you confirm that you:",
       [
-        "Do not violate applicable laws",
-        "Do not attempt unauthorized access",
-        "Do not disrupt website functionality",
-        "Do not copy or distribute content without permission",
+        "Agree to these Terms of Use",
+        "Will comply with applicable laws and regulations",
+        "Will use the website responsibly and ethically",
       ],
-      "We reserve the right to restrict access if terms are violated."
+      "Continued use after updates constitutes acceptance of revised terms."
     ],
   },
   {
-    title: "3. Intellectual Property",
+    title: "3. Use of Website Content",
     content: [
-      "All website content including text, graphics, logos, and design is owned by Brainixt.",
+      "All content on this website is the property of Brainixt unless stated otherwise.",
       [
-        "Text and content",
-        "Logos and brand assets",
-        "Design and structure",
-        "Articles and insights",
+        "You may view content for personal use",
+        "Share links or insights with proper attribution",
       ],
-      "Unauthorized use is strictly prohibited."
+      [
+        "Do not copy or distribute content for commercial purposes",
+        "Do not modify or create derivative works",
+        "Do not use Brainixt branding without permission",
+      ],
+      "Unauthorized use may violate copyright laws."
     ],
   },
   {
-    title: "4. Consulting Services",
+    title: "4. Website Access and Use",
     content: [
-      "Content on this website does not constitute professional advice or a binding agreement.",
-      "All engagements are governed by separate written agreements."
+      "You agree not to:",
+      [
+        "Attempt unauthorized access",
+        "Interfere with website functionality or security",
+        "Use automated tools to collect data",
+        "Engage in activities that disrupt the website",
+      ],
+      "Access may be restricted or terminated for violations."
     ],
   },
   {
-    title: "5. Information Accuracy",
+    title: "5. No Professional Advice",
     content: [
-      "We strive for accuracy but do not guarantee completeness or reliability.",
-      "Content may change at any time without notice."
+      "Content on this website is informational only and not professional advice.",
+      "Formal consulting relationships are governed by separate written agreements."
     ],
   },
   {
     title: "6. Third-Party Links",
     content: [
-      "We may include links to third-party websites.",
-      "We do not control or take responsibility for their content or policies."
+      "The website may contain links to third-party websites.",
+      "Brainixt does not control or take responsibility for these external sites."
     ],
   },
   {
     title: "7. Limitation of Liability",
     content: [
       [
-        "Use or inability to use the website",
+        "Use of the website",
         "Reliance on website information",
-        "Errors or interruptions",
+        "Website interruptions or technical issues",
       ],
-      "Use of this website is at your own risk."
+      "Use is at your own risk; Brainixt is not liable for any damages."
     ],
   },
   {
     title: "8. Privacy",
     content: [
-      "Your use of this website is also governed by our Privacy Policy.",
-      "We encourage users to review it."
+      "Your use of this website is subject to our Privacy Policy.",
+      "Users are encouraged to review the Privacy Policy for details on handling personal information."
     ],
   },
   {
-    title: "9. Changes to These Terms",
+    title: "9. Intellectual Property Rights",
     content: [
-      "We may update these terms at any time.",
-      "Continued use means acceptance of updated terms."
+      "All trademarks, logos, and branding are the property of Brainixt unless stated otherwise.",
+      "Unauthorized use is strictly prohibited."
     ],
   },
   {
     title: "10. Governing Law",
     content: [
-      "These terms are governed by the laws of India.",
+      "These Terms of Use are governed by the laws of India.",
       "Disputes fall under the jurisdiction of Indian courts."
     ],
   },
