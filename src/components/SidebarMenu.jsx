@@ -9,6 +9,7 @@ import Office from "../assets/Office.jpg";
 import People from "../assets/People.jpg";
 import OurInsights from "../assets/Insight.jpg";
 import JoinUs from "../assets/Join Us.jpg";
+import Blogs from "../assets/Blog.jpg";
 
 
 // cspell:ignore Ecommerce
@@ -115,14 +116,7 @@ company: [
       "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
     slug: "/about",
   },
-  {
-    name: "Case Studies",
-    description:
-      "Explore how Brainixt delivers measurable impact through structured transformation and growth systems.",
-    image:
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786",
-    slug: "/case-studies",
-  },
+  
   {
     name: "Office",
     description:
@@ -138,16 +132,84 @@ company: [
     slug: "/people",
   }
 ],
+ourinsights:[
+ {
+  name:"Blogs",
+  description:"",
+  image: Blogs,
+   children: [
+        {
+        name: "The Hidden Cost of Poor Business Systems",
+         description: "Explore how inefficient business systems silently drain revenue, reduce productivity, and limit scalability.",
+       slug: "/blogs/hidden-cost-of-poor-business-systems",
+     },
+       {
+        name: "The Founder’s Trap: Why Most Businesses Depend Too Much on the Owner",
+         description: "Understand how founder dependency can limit growth and discover strategies to transition to system-driven operations.",
+        slug: "/blogs/founders-trap",
+     },
+       {
+         name: "The Difference Between Growth and Scalable Growth",
+         description: "Learn why growth alone isn’t enough and how scalable systems drive sustainable, predictable business expansion.",
+       slug: "/blogs/difference-between-growth-and-scalable-growth",
+    },
+      {
+        name: "The 5 Systems Every Business Needs Before Scaling",
+        description: "Identify the core systems essential for efficient, scalable, and sustainable business growth.",
+        slug: "/blogs/five-systems-every-business-needs",
+      },
+      {
+        name: "How to Build a Predictable Revenue Engine",
+        description: "Discover the structured approach to generating consistent revenue independent of campaigns or individual performance.",
+        slug: "/blogs/build-a-predictable-revenue-engine",
+      },
+      {
+        name: "How Data-Driven Businesses Outperform Competitors",
+        description: "See how structured data and analytics empower businesses to make better decisions, optimize performance, and scale predictably.",
+        slug: "/blogs/data",
+      },
+      {
+        name: "From Leads to Revenue: Designing High-Conversion Funnels",
+        description: "Learn how to convert leads into predictable revenue with high-conversion funnels and structured sales systems.",
+        slug: "/blogs/high",
+      },
+      {
+        name: "Scaling Operations Without Chaos",
+        description: "Explore strategies to scale operations efficiently while maintaining consistency and minimizing operational bottlenecks.",
+        slug: "/blogs/scaling-operations-without-chaos",
+      },
+      {
+        name: "Maximizing Customer Lifetime Value",
+        description: "Understand how to increase customer retention, loyalty, and revenue through structured lifecycle systems.",
+        slug: "/blogs/maximizing-customer-lifetime-value",
+      },
+      {
+        name: "Optimizing Marketing ROI Through Systems",
+        description: "Learn how integrated marketing systems improve lead quality, reduce costs, and maximize return on investment.",
+        slug: "/blogs/optimizing-marketing-roi",
+     },
+    ],
 
-
-simplePages: [
-    {
+ },
+  {
     name: "Our Insights",
     description:
       "Access thought leadership, strategic perspectives, and insights on digital transformation and scalable growth.",
     image: OurInsights,
     slug: "/insights",
   },
+  {
+    name: "Case Studies",
+    description:
+      "Explore how Brainixt delivers measurable impact through structured transformation and growth systems.",
+    image:
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+    slug: "/case-studies",
+  },
+
+],
+
+simplePages: [
   {
     name: "Join Us",
     description:
@@ -178,7 +240,12 @@ const SidebarMenu = ({ open, setOpen }) => {
   src={logo}
   alt="Brainixt Logo"
   className="h-14 md:h-16 lg:h-20 object-contain cursor-pointer"
-  onClick={() => navigate("/")}
+  onClick={() => {
+  navigate("/");
+  setOpen(false);        // close sidebar
+  setActiveSection(null); // reset section
+  setActiveItem(null);    // reset item
+}}
 />
 
         <input
@@ -229,6 +296,17 @@ const SidebarMenu = ({ open, setOpen }) => {
                 Company →
               </div>
 
+              {/* Insight Links */}
+            <div
+                onClick={() => {
+                  setActiveSection("ourinsights");
+                  setActiveItem(sectionsData.ourinsights[0]);
+                }}
+                className="cursor-pointer py-2 border-b border-white/10"
+              >
+                Our Insights →
+              </div>
+
               {/* SIMPLE LINKS */}
               <div className="pt-4 space-y-2">
                 {sectionsData.simplePages.map((item, i) => (
@@ -262,55 +340,78 @@ const SidebarMenu = ({ open, setOpen }) => {
           )}
         </div>
 
-        {/* SECTION ITEMS */}
-        {activeSection && (
-          <div className="w-full md:w-[300px] px-4 sm:px-6 py-6 space-y-2">
+{/* SECTION ITEMS */}
+{activeSection && (
+  <div className="w-full md:w-[300px] px-4 sm:px-6 py-6 space-y-2">
+    {sectionsData[activeSection].map((item, index) => (
+      <div
+        key={index}
+        onClick={() => setActiveItem(item)}
+        className={`px-4 py-3 rounded-lg cursor-pointer ${
+          activeItem?.name === item.name ? "bg-white text-black" : "hover:bg-white/10"
+        }`}
+      >
+        {item.name}
+      </div>
+    ))}
+  </div>
+)}
+{/* PREVIEW */}
+{activeItem && (
+  <div className="flex-1 px-4 sm:px-8 py-6 border-t md:border-t-0 md:border-l border-white/10">
 
-            {sectionsData[activeSection].map((item, index) => (
-              <div
-                key={index}
-                onClick={() => setActiveItem(item)}
-                className={`px-4 py-3 rounded-lg cursor-pointer ${
-                  activeItem?.name === item.name
-                    ? "bg-white text-black"
-                    : "hover:bg-white/10"
-                }`}
-              >
-                {item.name}
-              </div>
-            ))}
-          </div>
-        )}
+  <img
+    src={activeItem.image}
+    alt=""
+    className="w-full h-[180px] sm:h-[220px] object-cover rounded-xl"
+  />
 
-        {/* PREVIEW */}
-        {activeItem && (
-          <div className="flex-1 px-4 sm:px-8 py-6 border-t md:border-t-0 md:border-l border-white/10">
+  <h2 className="text-xl sm:text-2xl font-semibold mt-5">
+    {activeItem.name}
+  </h2>
 
-            <img
-              src={activeItem.image}
-              alt=""
-              className="w-full h-[180px] sm:h-[220px] object-cover rounded-xl"
-            />
+  <p className="text-gray-300 mt-3 text-sm sm:text-base max-w-md">
+    {activeItem.description}
+  </p>
 
-            <h2 className="text-xl sm:text-2xl font-semibold mt-5">
-              {activeItem.name}
-            </h2>
+  {/* If the active item has children, render them here */}
+  {activeItem.children && (
+    <div className="mt-6 space-y-3">
+      {activeItem.children.map((child, index) => (
+        <div
+          key={index}
+          className="px-4 py-3 bg-white/10 rounded-lg hover:bg-white/20"
+        >
+          <h3 className="font-semibold">{child.name}</h3>
+          <p className="text-gray-300 text-sm">{child.description}</p>
+          <button
+            onClick={() => {
+              navigate(child.slug); // navigate to child
+              setOpen(false);       // close sidebar
+            }}
+            className="mt-2 px-4 py-1 bg-green-500 rounded-full text-sm"
+          >
+            → VISIT PAGE
+          </button>
+        </div>
+      ))}
+    </div>
+  )}
 
-            <p className="text-gray-300 mt-3 text-sm sm:text-base max-w-md">
-              {activeItem.description}
-            </p>
-
-            <button
-              onClick={() => {
-                navigate(activeItem.slug);
-                setOpen(false);
-              }}
-              className="mt-5 px-6 py-2 bg-green-500 rounded-full"
-            >
-              → VISIT PAGE
-            </button>
-          </div>
-        )}
+  {/* Only show visit page button if no children */}
+  {!activeItem.children && activeItem.slug && (
+    <button
+      onClick={() => {
+        navigate(activeItem.slug);
+        setOpen(false);
+      }}
+      className="mt-5 px-6 py-2 bg-green-500 rounded-full"
+    >
+      → VISIT PAGE
+    </button>
+  )}
+</div>
+)}
 
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -25,7 +26,12 @@ export default function Footer() {
 
         {/* BRAND */}
         <div className="lg:col-span-2">
-          <h3 className="text-white text-lg font-semibold mb-3">Brainixt</h3>
+          <img
+              src={logo}
+              alt="Brainixt Logo"
+              className="h-16 relative z-50"
+              onClick={() => navigate("/")}
+            />
           <p className="text-gray-400 text-sm leading-relaxed max-w-md">
             Strategy-led technology and growth consulting firm helping ambitious organizations design scalable digital ecosystems, accelerate growth, and build structured systems for long-term enterprise value.
           </p>
@@ -37,7 +43,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><Link to="/" className="hover:text-white">Home</Link></li>
             <li><Link to="/about" className="hover:text-white">About Brainixt</Link></li>
-            <li><Link to="/about" className="hover:text-white">Founder</Link></li>
+            <li><Link to="/parth-jain" className="hover:text-white">Founder</Link></li>
             <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
@@ -78,8 +84,12 @@ export default function Footer() {
       <Link to="/case-studies" className="hover:text-white">
         Case Studies
       </Link>
-    </li>
-
+      </li>
+      <li>
+        <Link to="/blogs/high" className="hover:text-white">
+        Blogs
+        </Link>
+      </li>
   </ul>
 </div>
 

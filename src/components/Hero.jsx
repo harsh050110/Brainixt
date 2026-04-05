@@ -3,19 +3,20 @@ import Blog from "../assets/Blog.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[110px] pb-12">
+    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[110px] pb-4">
       {/* TOP GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
 
         {/* LEFT SECTION */}
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between h-full">
+
 
           <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
               Where Strategy <br /> Becomes Scale.
             </h1>
 
-            <p className="mt-4 sm:mt-6 text-gray-300 max-w-md text-sm sm:text-base">
+            <p className="mt-3 sm:mt-6 text-gray-300 max-w-md text-sm sm:text-base">
               Brainixt is a global strategy-led technology and growth consulting firm partnering 
               with ambitious organizations to architect scalable digital ecosystems, accelerate 
               market expansion, and deliver measurable enterprise impact.
@@ -27,7 +28,7 @@ const Hero = () => {
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4 sm:mt-8">
               <Link
                 to="/contact"
                 className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gray-400 transition text-center"
@@ -39,12 +40,38 @@ const Hero = () => {
                 to="/technology"
                 className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition text-center"
               >
-                Explore Our Capabilities
+                Explore Our Technology
               </Link>
             </div>
           </div>
+          <ul className="mt-6 text-gray-400 text-sm space-y-2">
+  <li>• Strategy → Execution alignment</li>
+  <li>• Scalable system architecture</li>
+  <li>• Growth-focused delivery</li>
+</ul>
+          <div className="mt-6 flex items-center gap-4 text-sm text-gray-400">
+  <span className="px-3 py-1 border border-gray-600 rounded-full">
+    Strategy
+  </span>
 
+  <span>→</span>
 
+  <span className="px-3 py-1 border border-gray-600 rounded-full">
+    Architecture
+  </span>
+
+  <span>→</span>
+
+  <span className="px-3 py-1 border border-gray-600 rounded-full">
+    Growth
+  </span>
+
+  <span>→</span>
+
+  <span className="px-3 py-1 bg-white text-black rounded-full font-medium">
+    Scale
+  </span>
+</div>
         </div>
 
         {/* CENTER CARDS */}
@@ -106,7 +133,7 @@ const Hero = () => {
               
             </div>
 
-            <Link to="/how">
+            <Link to="/organize">
               <button className="bg-white text-black px-4 py-2 rounded-md w-fit">
                 View Case Study →
               </button>
@@ -156,20 +183,24 @@ const Hero = () => {
         </div>
 
         {/* CTA BOX */}
-        <div className="bg-[#095976] p-6 rounded-xl flex flex-col justify-center">
-          <h2 className="text-base sm:text-lg font-semibold mb-4">
-            Stay ahead with Brainixt insights and strategies.
-          </h2>
+      <div className="bg-[#095976] p-6 rounded-xl flex flex-col justify-center">
+  <h2 className="text-base sm:text-lg font-semibold mb-4">
+    Stay ahead with Brainixt insights and strategies.
+  </h2>
 
-          <div className="flex">
-            <input
-              placeholder="Email address"
-              className="flex-1 px-4 py-2 text-black outline-none"
-            />
-            <button className="bg-blue-500 px-4">→</button>
-          </div>
-        </div>
-
+  <div className="flex">
+    <input
+      placeholder="Email address"
+      className="flex-1 px-4 py-2 text-black outline-none"
+    />
+    <Link
+      to="/subscribe"  // this will now work
+      className="bg-blue-500 px-4 flex items-center justify-center"
+    >
+      →
+    </Link>
+  </div>
+</div>
       </div>
 
     </div>
