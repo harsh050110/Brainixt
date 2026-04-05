@@ -5,7 +5,6 @@ import Transformation from "../components/sections/Transformation";
 import CaseStudies from "../components/sections/CaseStudies";
 import Insights from "../components/sections/Insights";
 import Founder from "../components/sections/Founder";
-import CTA from "../components/sections/CTA";
 
 const Home = () => {
   return (
@@ -17,7 +16,7 @@ const Home = () => {
       <CaseStudies />
       <Insights />
       <Founder />
-      <CTA />
+      
       
     </>
   );

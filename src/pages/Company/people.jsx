@@ -4,6 +4,8 @@ import Harsh from "../../assets/Harsh.jpeg";
 import Bhavesh from"../../assets/Bhavesh-Jain.png";
 import Sajal from "../../assets/Sajal-Jain.png";
 import Shashank from "../../assets/Shashank-Jain.png";
+import Aman from "../../assets/Aman.png";
+import Divya from "../../assets/Divya.png";
 export default function PeoplePage() {
   const founder = {
     name: "Parth Jain",
@@ -180,17 +182,76 @@ const team = [
     </a>
 
   </div>
+  <br></br>
+  <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400/40 transition">
+
+    {/* Image */}
+    <img
+      src={Aman}
+      alt=" Aman Tyagi"
+      className="w-24 h-24 rounded-full object-cover mb-4"
+    />
+
+    {/* Name */}
+    <h3 className="text-sm font-semibold">
+      Aman Tyagi
+    </h3>
+
+    {/* Role */}
+    <p className="text-indigo-300 text-xs mb-3">
+      Strategic Advisor – Business & Growth
+
+    </p>
+
+    {/* Description */}
+    <p className="text-gray-400 text-sm max-w-xl leading-relaxed mb-4">
+      Advises on growth strategy, market positioning, and scalable business models to enable long-term, performance-driven expansion.
+    </p>
+    {/* Button */}
+    <a
+      href="https://www.linkedin.com/in/aman-tyagi-5109ba207/"
+      className="px-4 py-1 text-xs rounded-full bg-indigo-500 hover:bg-indigo-600 transition"
+    >
+      View Profile
+    </a>
+
+  </div>
+  <br></br>
+  <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400/40 transition">
+
+    {/* Image */}
+    <img
+      src={Divya}
+      alt="Divya Nagapal"
+      className="w-24 h-24 rounded-full object-cover mb-4"
+    />
+
+    {/* Name */}
+    <h3 className="text-sm font-semibold">
+      Divya Nagpal
+    </h3>
+
+    {/* Role */}
+    <p className="text-indigo-300 text-xs mb-3">
+      Senior Strategy Consultant
+    </p>
+
+    {/* Description */}
+    <p className="text-gray-400 text-sm max-w-xl leading-relaxed mb-4">
+      Leads business strategy, growth architecture, and transformation planning, enabling organizations to build scalable and system-driven growth models.
+    </p>
+
+    {/* Button */}
+    <a
+      href="https://www.linkedin.com/in/divya-nagpal-a1bb711aa"
+      className="px-4 py-1 text-xs rounded-full bg-indigo-500 hover:bg-indigo-600 transition"
+    >
+      View Profile
+    </a>
+
+  </div>
 </section>
 
-      {/* SUPPORT */}
-      <section className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-lg font-semibold mb-3">
-          Supported by a Network of Specialists
-        </h2>
-        <p className="text-gray-400 text-sm">
-          Brainixt operates with a focused leadership team supported by specialists across strategy, technology, and growth systems.
-        </p>
-      </section>
 
       {/* MODEL */}
       <section className="max-w-5xl mx-auto text-center mb-16">

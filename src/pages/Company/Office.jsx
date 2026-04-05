@@ -15,6 +15,11 @@ export default function OfficePage() {
       address: "WeWork, DLF SEZ, Sector 24, Gurugram",
       desc: "Enables collaboration with corporate clients, growth-stage companies, and international business networks.",
     },
+    {
+      title: "Gurugram",
+      address: "BS16, 2nd Floor, Baani City Center, Sector 63, Gurugram, Haryana- 122016",
+      desc: "Located in one of  Hi-Tech cities."
+    },
   ];
 
   const engagement = [
