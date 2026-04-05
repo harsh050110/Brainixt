@@ -175,7 +175,7 @@ export default function ParthJain() {
           Open to conversations with founders and leadership teams navigating transformation and scaling challenges.
         </p>
         <a
-  href="https://linkedin.com/in/YOUR-LINK"
+  href="https://www.linkedin.com/in/parthjainync/"
   target="_blank"
   rel="noopener noreferrer"
 >

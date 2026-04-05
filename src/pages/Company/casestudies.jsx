@@ -177,6 +177,59 @@ export default function CaseStudiesPage() {
         ))}
       </div>
 
+<br></br>
+      {/*  CASE STUDIES  */}
+      <section className="max-w-6xl mx-auto mb-20 text-center">
+        <h2 className="text-lg font-semibold mb-8">Case Studies</h2>
+      
+        {[
+          {
+            title: "Scaling a Real Estate Firm",
+            desc: "Implemented a structured lead-to-revenue system, improving follow-ups, CRM tracking, and sales conversion for a growth-stage real estate platform.",
+            slug: "real-estate-scaling",
+          },
+          {
+            title: "D2C Revenue System Optimization",
+            desc: "Built a full-funnel revenue system for a D2C brand, increasing customer lifetime value, conversion rates, and reducing reliance on paid ads.",
+            slug: "d2c-revenue-system",
+          },
+          {
+            title: "SaaS Platform Scalability",
+            desc: "Transformed a SaaS startup’s architecture into a scalable, modular, and API-driven platform, enhancing performance and reducing technical debt.",
+            slug: "saas-scalability",
+          },
+          {
+            title: "Enterprise Digital System Alignment",
+            desc: "Implemented an integrated digital ecosystem for a multi-vertical enterprise, improving operational efficiency, cross-functional alignment, and data visibility.",
+            slug: "enterprise-system-alignment",
+          },
+          {
+            title: "EdTech Platform Growth Design",
+            desc: "Redesigned an EdTech platform’s experience and engagement systems, doubling user engagement, improving course completion, and building scalable learning infrastructure.",
+            slug: "edtech-platform-growth",
+          },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="p-6 mb-6 bg-white/5 border border-white/10 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(99,102,241,0.2),0_10px_30px_rgba(0,0,0,0.4)]"
+          >
+            <h3 className="text-white font-semibold mb-2">
+              {item.title}
+            </h3>
+      
+            <p className="text-gray-500 text-sm mb-4 max-w-2xl mx-auto">
+              {item.desc}
+            </p>
+      
+            <Link to={`/case-study/${item.slug}`}>
+              <button className="text-sm px-5 py-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 text-black font-medium hover:scale-105 transition">
+                View Case Study
+              </button>
+            </Link>
+          </div>
+        ))}
+      </section>
+
       {/* INSIGHT SECTION */}
       <div className="max-w-4xl mx-auto text-center mt-24 text-gray-400 relative z-10">
         <p>
