@@ -46,7 +46,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 w-full z-50 flex items-center justify-between 
       px-4 sm:px-6 py-4 sm:py-5
-      bg-[#020617]/80 backdrop-blur-md border-b border-white/10 text-white">
+      bg-[#020617]/90 backdrop-blur-md border-b border-white/5 text-white">
 
         {/* LEFT */}
         <div className="flex items-center gap-3 sm:gap-6">
@@ -67,7 +67,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Brainixt Logo"
-            className="h-10 sm:h-14 md:h-16 cursor-pointer"
+            className="h-10 sm:h-14 md:h-16 cursor-pointer block"
             onClick={() => navigate("/")}
           />
         </div>
