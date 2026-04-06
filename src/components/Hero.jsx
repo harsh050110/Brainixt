@@ -3,16 +3,16 @@ import Blog from "../assets/Blog.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[110px] pb-4">
+    <div className="bg-[#020617] text-white px-4 sm:px-6 md:px-10 pt-[90px] sm:pt-[110px] pb-6">
+      
       {/* TOP GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
 
         {/* LEFT SECTION */}
-        <div className="flex flex-col justify-between h-full">
-
+        <div className="flex flex-col justify-between h-full gap-6">
 
           <div>
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-semibold leading-snug">
               Where Strategy <br /> Becomes Scale.
             </h1>
 
@@ -28,7 +28,7 @@ const Hero = () => {
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4 sm:mt-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-5 sm:mt-8">
               <Link
                 to="/contact"
                 className="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gray-400 transition text-center"
@@ -44,41 +44,44 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <ul className="mt-6 text-gray-400 text-sm space-y-2">
-  <li>• Strategy → Execution alignment</li>
-  <li>• Scalable system architecture</li>
-  <li>• Growth-focused delivery</li>
-</ul>
-          <div className="mt-6 flex items-center gap-4 text-sm text-gray-400">
-  <span className="px-3 py-1 border border-gray-600 rounded-full">
-    Strategy
-  </span>
 
-  <span>→</span>
+          <ul className="mt-4 sm:mt-6 text-gray-400 text-sm space-y-1 sm:space-y-2">
+            <li>• Strategy → Execution alignment</li>
+            <li>• Scalable system architecture</li>
+            <li>• Growth-focused delivery</li>
+          </ul>
 
-  <span className="px-3 py-1 border border-gray-600 rounded-full">
-    Architecture
-  </span>
+          <div className="mt-4 sm:mt-6 flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
+            <span className="px-3 py-1 border border-gray-600 rounded-full">
+              Strategy
+            </span>
 
-  <span>→</span>
+            <span>→</span>
 
-  <span className="px-3 py-1 border border-gray-600 rounded-full">
-    Growth
-  </span>
+            <span className="px-3 py-1 border border-gray-600 rounded-full">
+              Architecture
+            </span>
 
-  <span>→</span>
+            <span>→</span>
 
-  <span className="px-3 py-1 bg-white text-black rounded-full font-medium">
-    Scale
-  </span>
-</div>
+            <span className="px-3 py-1 border border-gray-600 rounded-full">
+              Growth
+            </span>
+
+            <span>→</span>
+
+            <span className="px-3 py-1 bg-white text-black rounded-full font-medium">
+              Scale
+            </span>
+          </div>
+
         </div>
 
         {/* CENTER CARDS */}
         <div className="flex flex-col gap-6">
 
           {/* CARD 1 */}
-          <div className="relative h-[220px] sm:h-[240px] lg:h-[260px] rounded-xl overflow-hidden">
+          <div className="relative h-[200px] sm:h-[240px] lg:h-[260px] rounded-xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1639322537228-f710d846310a"
               className="w-full h-full object-cover"
@@ -87,15 +90,15 @@ const Hero = () => {
             <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <p className="text-xs text-gray-300">INSIGHT</p>
               <Link to="/digitalecosystem">
-              <h2 className="text-sm sm:text-lg font-semibold">
-                Building scalable digital ecosystems →
-              </h2>
+                <h2 className="text-sm sm:text-lg font-semibold">
+                  Building scalable digital ecosystems →
+                </h2>
               </Link>
             </div>
           </div>
 
           {/* CARD 2 */}
-          <div className="relative h-[220px] sm:h-[240px] lg:h-[260px] rounded-xl overflow-hidden">
+          <div className="relative h-[200px] sm:h-[240px] lg:h-[260px] rounded-xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
               className="w-full h-full object-cover"
@@ -114,7 +117,7 @@ const Hero = () => {
         </div>
 
         {/* RIGHT BIG CARD */}
-        <div className="relative rounded-xl overflow-hidden h-[260px] sm:h-[320px] lg:h-full">
+        <div className="relative rounded-xl overflow-hidden h-[220px] sm:h-[320px] lg:h-full">
 
           <img
             src="https://images.unsplash.com/photo-1556157382-97eda2d62296"
@@ -122,7 +125,7 @@ const Hero = () => {
             alt=""
           />
 
-          <div className="absolute inset-0 bg-black/40 p-4 sm:p-6 flex flex-col justify-between">
+          <div className="absolute inset-0 bg-black/40 p-4 sm:p-6 flex flex-col justify-between gap-4">
 
             <div>
               <p className="text-xs sm:text-sm text-gray-300">FEATURED</p>
@@ -130,7 +133,6 @@ const Hero = () => {
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mt-2 leading-snug">
                 How Brainixt helps organizations scale with precision, speed, and impact
               </h2>
-              
             </div>
 
             <Link to="/organize">
@@ -146,7 +148,7 @@ const Hero = () => {
       </div>
 
       {/* BOTTOM SECTION */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 sm:mt-10">
 
         {/* CARD 3 */}
         <div className="relative h-[200px] sm:h-[220px] rounded-xl overflow-hidden">
@@ -158,9 +160,9 @@ const Hero = () => {
           <div className="absolute bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <p className="text-xs text-gray-300">INSIGHT</p>
             <Link to="/leadership">
-            <h2 className="text-sm sm:text-lg font-semibold">
-              Scaling leadership in modern enterprises
-            </h2>
+              <h2 className="text-sm sm:text-lg font-semibold">
+                Scaling leadership in modern enterprises
+              </h2>
             </Link>
           </div>
         </div>
@@ -183,24 +185,25 @@ const Hero = () => {
         </div>
 
         {/* CTA BOX */}
-      <div className="bg-[#095976] p-6 rounded-xl flex flex-col justify-center">
-  <h2 className="text-base sm:text-lg font-semibold mb-4">
-    Stay ahead with Brainixt insights and strategies.
-  </h2>
+        <div className="bg-[#095976] p-5 sm:p-6 rounded-xl flex flex-col justify-center">
+          <h2 className="text-base sm:text-lg font-semibold mb-4">
+            Stay ahead with Brainixt insights and strategies.
+          </h2>
 
-  <div className="flex">
-    <input
-      placeholder="Email address"
-      className="flex-1 px-4 py-2 text-black outline-none"
-    />
-    <Link
-      to="/subscribe"  // this will now work
-      className="bg-blue-500 px-4 flex items-center justify-center"
-    >
-      →
-    </Link>
-  </div>
-</div>
+          <div className="flex flex-col sm:flex-row gap-2">
+            <input
+              placeholder="Email address"
+              className="flex-1 px-4 py-2 text-black outline-none rounded-md"
+            />
+            <Link
+              to="/subscribe"
+              className="bg-blue-500 px-4 py-2 flex items-center justify-center rounded-md"
+            >
+              →
+            </Link>
+          </div>
+        </div>
+
       </div>
 
     </div>
